@@ -20,10 +20,12 @@ body {
   position: absolute;
   left: 10%;
   top: 7%;
+  font-size: 15em;
 }
 
 .gridContainer {
-  grid-template-rows: repeat(4, 1fr [start]);
+  grid-gap: .5em;
+  grid-template-rows: repeat(10, 1fr [start]);
   padding: .5em;
   background-image: url();
   background-repeat: no-repeat;
@@ -36,85 +38,7 @@ body {
   height: 100vh;
 }
 
-#gridHeader {
-  grid-area: 1 / 17 / span 2 / span 4;
-  background-color: #000;
-  color: #fff;
-  text-align: right;
-  padding: 10px;
-}
 
-#gridHeader ul {
- list-style-type: none;
- text-align: center;
- font-size: 2em;
-}
-
-.box {
-  mix-blend-mode: screen; 
-  background-color: #000;
-}
-
-/*Grid Items Homepage*/
-
-#gridItemA {
-  grid-area: 1 /2 / span 1 / span 10;
-  background-color: #fff;
-}
-
-#gridItemB {
-  grid-area: 2 /3 / span 1 / span 10;
-  background-color: #000;
-}
-
-#gridItemA>h1 {
-  font-size: 15em;
-}
-
-#gridItem2 {
-
-  grid-area: 1 / 1 / span 4 / span 1;
-  border-right: 1px solid white;
-  position: relative;
-}
-
-.sideBarText {
-  transform: rotate(90deg);
-  color: #fff;
-  transform-origin: 20% 40%;
-  font-weight: bold;
-  font-size: 3em;
-  position: absolute;
-  padding-top: .5em;
-  width: 4em;
-}
-.sideBarLinks {
-  position: absolute;
-  list-style-type: none;
-  display: inline-flex;
-  transform: rotate(90deg);
-  color: #fff;
-  transform-origin: 20% 40%;
-  top: 22%;
-  width: 5em;
-  font-weight: bold;
-  font-size: 1.7em;
-  padding-top: .8em;
-
-}
-
-.sideBarLinks li {
-  display: inline-flex;
-  padding: 0px .5em;
-}
-
-.list1 {
-}
-.list2 {
-}
-.list3 {
-  
-}
 .App {
   font-family: sans-serif;
   text-align: left;

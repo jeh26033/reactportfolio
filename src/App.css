@@ -5,6 +5,15 @@ body {
   background-size: cover;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#ccc;
+}
+
 .container-fluid {
   padding: 0px!important;
 }
@@ -37,7 +46,6 @@ body {
   grid-template-columns: repeat(20, 1fr [start]);
   height: 100vh;
 }
-
 
 .App {
   font-family: sans-serif;

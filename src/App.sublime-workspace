@@ -1,0 +1,593 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is",
+				"isRequired"
+			],
+			[
+				"compl",
+				"completed"
+			],
+			[
+				"compo",
+				"component"
+			],
+			[
+				"Add",
+				"addTodo"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"form",
+				"from"
+			],
+			[
+				"header",
+				"headerStyle"
+			],
+			[
+				"TEXT",
+				"text-white"
+			],
+			[
+				"defaultb",
+				"defaultBonusBlock"
+			],
+			[
+				"pad",
+				"padding-top\tproperty"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"replace",
+				"replaceWith"
+			],
+			[
+				"img",
+				"imgRes\tDealerOn Bootstrap: imgRes | Creates a default responsive image"
+			],
+			[
+				"backgroun-c",
+				"background-color\tproperty"
+			],
+			[
+				"list",
+				"list-pad-x"
+			],
+			[
+				"F",
+				"Forte5"
+			],
+			[
+				"Forte",
+				"Forte5"
+			],
+			[
+				"5-d",
+				"5-Door"
+			],
+			[
+				"K",
+				"K900"
+			],
+			[
+				"For",
+				"Forte5"
+			],
+			[
+				"label",
+				"labelArray"
+			],
+			[
+				"Sch",
+				"schedule"
+			],
+			[
+				"Schedule",
+				"schedule-service-appointment"
+			],
+			[
+				"content",
+				"content-main"
+			],
+			[
+				"col-md",
+				"col-md-offset-1"
+			],
+			[
+				"dql",
+				"dqlString"
+			],
+			[
+				"build",
+				"buildDQL"
+			],
+			[
+				"dq",
+				"dqlValues"
+			],
+			[
+				"dlq",
+				"dqlString"
+			],
+			[
+				"fil",
+				"filterValues"
+			],
+			[
+				"quer",
+				"querystring"
+			],
+			[
+				"pad-v",
+				"pad-vert-1x"
+			],
+			[
+				"ac",
+				"activePageBladeNames"
+			],
+			[
+				"ro",
+				"rotation_interval"
+			],
+			[
+				"roa",
+				"rotation"
+			],
+			[
+				"rotat",
+				"rotation"
+			],
+			[
+				"geteleme",
+				"getElementsByClassName"
+			],
+			[
+				"blad",
+				"bladeNames1"
+			],
+			[
+				"pic",
+				"pieCount"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"tra",
+				"transistion"
+			],
+			[
+				"blade",
+				"bladeWrapper"
+			],
+			[
+				"close",
+				"closeNav"
+			],
+			[
+				"open",
+				"openMenu"
+			],
+			[
+				"click",
+				"clicked"
+			],
+			[
+				"opened-",
+				"opened-nav"
+			],
+			[
+				"em",
+				"embed\tTag"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"st",
+				"styles"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"poacka",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"responsive",
+				"Snippet: DealerOn: iframe16x9 | Outputs iframe including embed classes for 16:9 aspect ratio fluid responsive scaling"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"embe",
+				"Snippet: videoControls | Embed responsive 16:9 HTML5 video player with time and volume controls."
+			],
+			[
+				"hero",
+				"Snippet: Hero Template: Custom Page Sidebar Template w/ Hero Image "
+			],
+			[
+				"responsiv",
+				"Snippet: DealerOn: iframe16x9 | Outputs iframe including embed classes for 16:9 aspect ratio fluid responsive scaling"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"her",
+				"Snippet: Hero Template: Custom Page Sidebar Template w/ Hero Image "
+			],
+			[
+				"dealer sidebar",
+				"Snippet: DealerOn Sidebar | Address Section"
+			],
+			[
+				"about",
+				"Snippet: DealerOn Bootstrap: defaultHours | Creates a default tabbed hours table"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"carou",
+				"Snippet: DealerOn Bootstrap: defaultCarousel | Creates a default Bootstrap image carousel"
+			],
+			[
+				"jq",
+				"Snippet: rcScripts: jQuery wrapper to be used for scripts inside replacement codes."
+			],
+			[
+				"jav",
+				"Set Syntax: Java"
+			],
+			[
+				"pug",
+				"Set Syntax: Pug"
+			],
+			[
+				"les",
+				"Set Syntax: Less"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"Snippet: DealerOn Sidebar | Search New Section"
+			],
+			[
+				"carous",
+				"Snippet: DealerOn Bootstrap: defaultCarousel | Creates a default Bootstrap image carousel"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jharskamp/Documents/reactapp/src/App.css",
+		"/C/Users/jharskamp/Desktop/boxifyv6.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/nissan-modelbar-tabbed.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/porsche-model-bar.html",
+		"/C/Users/jharskamp/Downloads/30-percent.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/nissan-model-bar-slick.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/lexus-model-bar-slick2.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/kia-orginal.html",
+		"/C/Users/jharskamp/Downloads/model bar audit/lexus-modelbar-slick-tabbed-original.html",
+		"/C/Users/jharskamp/Desktop/labelspy/background.js",
+		"/C/Users/jharskamp/Desktop/labelspy/content.js",
+		"/C/Users/jharskamp/Desktop/labelspy/labelspy.html",
+		"/C/Users/jharskamp/Desktop/labelspy/manifest.json",
+		"/C/Users/jharskamp/Downloads/document_scan/document_scan/scan.html",
+		"/C/Users/jharskamp/Desktop/labelspy/styles.css",
+		"/C/Users/jharskamp/Downloads/document_scan/document_scan/scan.js",
+		"/C/Users/jharskamp/Downloads/document_scan/document_scan/scan.css",
+		"/C/Users/jharskamp/Downloads/document_scan/document_scan/background.js",
+		"/C/Users/jharskamp/Documents/DES-79868-DQL-query-string-joseph/javascript.js",
+		"/C/Users/jharskamp/.config/configstore/update-notifier-npm.json",
+		"/C/Users/jharskamp/Documents/GitHub/Buddy-Bot/bot.js",
+		"/C/Users/jharskamp/Desktop/buddy/util/stalker.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/pokemon-beta.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/pokemon.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/admingive.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/compdota.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/dota.js",
+		"/C/Users/jharskamp/Desktop/buddy/json/abilities.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/hero.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/inhouse.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/lastmatch.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/leaderboard.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/levels.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/points.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/games/store.js",
+		"/C/Users/jharskamp/Desktop/buddy/util/watcher.js",
+		"/C/Users/jharskamp/Desktop/buddy/util/dotawatcher.js",
+		"/C/Users/jharskamp/Desktop/buddy/util/apexwatcher.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/owl.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/kill.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/giphy.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/hug.js",
+		"/C/Users/jharskamp/Desktop/buddy/bot.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/dog.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/cats.js",
+		"/C/Users/jharskamp/Desktop/buddy/package.json",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/covertkill.js",
+		"/C/Users/jharskamp/Desktop/buddy/commands/fun/birb.js",
+		"/C/Program Files/nodejs/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.py",
+		"/C/Users/jharskamp/Documents/DES-79868-DQL-query-string-joseph/index.html",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/index.html",
+		"/C/Users/jharskamp/Downloads/Addison Autoples/about.html",
+		"/C/Users/jharskamp/Downloads/Addison Autoples/finance.html",
+		"/C/Users/jharskamp/Downloads/Addison Autoples/disclaimer.html",
+		"/C/Users/jharskamp/Downloads/Addison Autoples/aboutorig",
+		"/C/Users/jharskamp/Downloads/Herrin-gear Toyota/warranty.html",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/Version 2/style.css",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/Version 2/javascript.js",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/Version 2/index.html",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/Version 2/analyzer.js",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/style.css",
+		"/C/Users/jharskamp/Desktop/Switchblade Nav/javascript.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/css/component2.css",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/js/demo2.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/index2.html",
+		"/C/Users/jharskamp/Downloads/Herrin-gear Toyota/lease-benefits.html",
+		"/C/Users/jharskamp/Downloads/Herrin-gear Toyota/lease-return.html",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/js/demo1.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/css/component1.css",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/index.html",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/js/modernizr-2.6.2.min.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/js/polyfills.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/interactivedemo/js/main.js",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/css/normalize.css",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/css/demo.css",
+		"/C/Users/jharskamp/Desktop/CircularNavigation/README.md",
+		"/C/Users/jharskamp/test/templates/views/index.pug",
+		"/C/Users/jharskamp/test/public/styles/site/layout.less",
+		"/C/Users/jharskamp/test/templates/layouts/default.pug",
+		"/C/Users/jharskamp/test/public/images/logo.svg",
+		"/C/Users/jharskamp/test/package.json",
+		"/C/Users/jharskamp/test/templates/mixins/flash-messages.pug",
+		"/C/Users/jharskamp/test/models/User.js",
+		"/C/Users/jharskamp/test/public/styles/site.less",
+		"/C/Users/jharskamp/AppData/Roaming/npm/node_modules/node-gyp-install/node_modules/npmlog/.npmrc",
+		"/C/Users/jharskamp/AppData/Roaming/npm/node_modules/node-gyp-install/bin.js",
+		"/C/Users/jharskamp/Documents/New folder/Buddy-Bot-master/binding.gyp",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/military.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/community.html",
+		"/C/Users/jharskamp/AppData/Roaming/npm/node_modules/node-gyp-install/index.js",
+		"/C/Users/jharskamp/test/public/styles/bootstrap/close.less",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/general_manager.html",
+		"/C/Users/jharskamp/test/keystone.js",
+		"/C/Users/jharskamp/test/routes/views/gallery.js",
+		"/C/Users/jharskamp/test/models/Post.js",
+		"/C/Users/jharskamp/test/templates/views/blog.pug",
+		"/C/Users/jharskamp/test/routes/views/post.js",
+		"/C/Users/jharskamp/test/models/Enquiry.js",
+		"/C/Users/jharskamp/test/public/styles/site/variables.less",
+		"/C/Users/jharskamp/test/public/styles/site.min.css",
+		"/C/Users/jharskamp/test/.editorconfig",
+		"/C/Users/jharskamp/test/templates/views/post.pug",
+		"/C/Users/jharskamp/test/.env",
+		"/C/Users/jharskamp/test/templates/emails/enquiry-notification.pug",
+		"/C/Users/jharskamp/AppData/Roaming/Sublime Text 3/Packages/Colorcoder/scotchy (Colorcoded).tmTheme",
+		"/C/Users/jharskamp/AppData/Roaming/Sublime Text 3/Packages/Colorcoder/firstrun",
+		"/C/Users/jharskamp/test/models/Gallery.js",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/yakima-accessories-test.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/yakima-accessories.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/structure-deal.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/lease-returns.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/tire-comparision.html",
+		"/C/Users/jharskamp/Downloads/Sheehy Lexus CM/whybuy.html"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "App.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

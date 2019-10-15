@@ -1,9 +1,123 @@
-.App {
-  text-align: center;
+body {
+  margin:0px;
+  padding:0px;
+  background-image: url(stars.jpg);
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
+.container-fluid {
+  padding: 0px!important;
+}
+
+.knockout {
+  background: url(stars.jpg) -10px;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-family: arial, helvetica;
+  background-color: #000;
+  position: absolute;
+  left: 10%;
+  top: 7%;
+}
+
+.gridContainer {
+  grid-template-rows: repeat(4, 1fr [start]);
+  padding: .5em;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-auto-flow: dense;
+  background-position: center;
+  grid-template-columns: repeat(20, 1fr [start]);
+  height: 100vh;
+}
+
+#gridHeader {
+  grid-area: 1 / 17 / span 2 / span 4;
+  background-color: #000;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+}
+
+#gridHeader ul {
+ list-style-type: none;
+ text-align: center;
+ font-size: 2em;
+}
+
+.box {
+  mix-blend-mode: screen; 
+  background-color: #000;
+}
+
+/*Grid Items Homepage*/
+
+#gridItemA {
+  grid-area: 1 /2 / span 1 / span 10;
+  background-color: #fff;
+}
+
+#gridItemB {
+  grid-area: 2 /3 / span 1 / span 10;
+  background-color: #000;
+}
+
+#gridItemA>h1 {
+  font-size: 15em;
+}
+
+#gridItem2 {
+
+  grid-area: 1 / 1 / span 4 / span 1;
+  border-right: 1px solid white;
+  position: relative;
+}
+
+.sideBarText {
+  transform: rotate(90deg);
+  color: #fff;
+  transform-origin: 20% 40%;
+  font-weight: bold;
+  font-size: 3em;
+  position: absolute;
+  padding-top: .5em;
+  width: 4em;
+}
+.sideBarLinks {
+  position: absolute;
+  list-style-type: none;
+  display: inline-flex;
+  transform: rotate(90deg);
+  color: #fff;
+  transform-origin: 20% 40%;
+  top: 22%;
+  width: 5em;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-top: .8em;
+
+}
+
+.sideBarLinks li {
+  display: inline-flex;
+  padding: 0px .5em;
+}
+
+.list1 {
+}
+.list2 {
+}
+.list3 {
+  
+}
+.App {
+  font-family: sans-serif;
+  text-align: left;
 }
 
 .App-header {
@@ -15,8 +129,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.subTitle {
+  font-size: 3em;
 }
+

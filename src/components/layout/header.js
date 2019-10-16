@@ -43,6 +43,7 @@ export default function Header() {
 
 				</header>
 			</div>
+			
 			<Route exact path="/" render={props => (               
 				<Intro />
               )} />
@@ -69,7 +70,6 @@ function OldSchoolMenuLink({ label, to, activeOnlyWhenExact }) {
 
 const linkStyle = {
 	color:'#fff',
-
 	fontFamily:'sans-serif',
 	fontSize:'1.45em',
 	padding:'0px .5em'

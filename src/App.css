@@ -1,3 +1,5 @@
+
+
 body {
   margin:0px;
   padding:0px;
@@ -26,10 +28,8 @@ a:hover {
   font-weight: bold;
   font-family: arial, helvetica;
   background-color: #000;
-  position: absolute;
-  left: 10%;
-  top: 7%;
-  font-size: 15em;
+
+ /* font-size: 15em;*/
 }
 
 .gridContainer {
@@ -68,3 +68,132 @@ a:hover {
   font-size: 3em;
 }
 
+.slide1 {
+  top:0%;
+  left:0%;
+}
+.slide2 {
+  top:5%;
+  left:5%;
+}
+.slide3 {
+  top:10%;
+  left:10%;
+}
+.slide4 {
+  top:15%;
+  left:15%;
+}
+
+.cards {
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  margin: 15px; 
+  width: calc((100% / 4) - 30px);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .cardInner {
+  background-color:  #1abc9c;
+  transform: scale(1.05);
+}
+
+.cardInner {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  background-color: gray;
+  color: lightgray;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardInner:after {
+  transition: all 0.3s ease-in-out;
+}
+
+.cardExpander {
+  transition: all 0.2s ease-in-out;
+  background-color: darkgray;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: lightgray;
+  font-size: 1.5em;
+}
+
+.is-collapsed > .cardInner:after {
+  content: "";
+  opacity: 0;
+
+}
+
+.is-collapsed >.cardExpander {
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+}
+
+.is-expanded > .cardInner { 
+  background-color:#1abc9c;
+} 
+
+.is-expanded > .cardInner:after{
+  content: "";
+  opacity: 1;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 15px);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333a45;
+}
+
+.cardExpander {
+  max-height: 1000px;
+  min-height: 200px;
+  overflow: visible;
+  margin-top: 30px;
+  opacity: 1;
+}
+
+.cardExpander .cardInner:hover {
+  transform: scale(1);
+}
+
+.is-inactive {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media screen and (min-width: 992px) {
+
+  .card:nth-of-type(3n+2) .card__expander {
+    margin-left: calc(-100% - 30px);
+  }
+  .card:nth-of-type(3n+3) .card__expander {
+    margin-left: calc(-200% - 60px);
+  }
+  .card:nth-of-type(3n+4) {
+    clear: left;
+  }
+  .card__expander {
+    width: calc(300% + 60px);
+  }
+
+}

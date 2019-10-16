@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 function Sidebar() {
 	return (
@@ -7,8 +6,8 @@ function Sidebar() {
 	    <div style={sideBar} id="gridItem2" className="sidebar">
 	      <span style={sideBarText} className="sideBarText">.find-me</span>
 	      <ul style={sideBarLinks}className="sideBarLinks">
-	        <li style={sideBarLinksLi}>LinkedIn </li>
-	        <li style={sideBarLinksLi}>Email </li>
+	        <li style={sideBarLinksLi}>linkedIn </li>
+	        <li style={sideBarLinksLi}>email </li>
 	        <li style={sideBarLinksLi}>github </li>
 	      </ul>
 	    </div>

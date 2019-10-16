@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
-
+import Expander from '../expander.js'
 export default function Work() {
 	return (
-		//doesn't always need a div
+
 		<React.Fragment>
-		
-			<h1>Work Examples</h1>
-			<p>lorem ipsum</p>
+			<Expander />
+			
 		</React.Fragment>
 	);
 }
+
+const workSlides = {
+	gridArea:'2/3/ span 4/ span 5',
+	border:'1px solid white',
+	zIndex:'1',
+	position:'relative'
+
+}
+
+const work = {
+	width:'300px',
+	backgroundColor:'#ccc',
+	height:'300px',
+	border:'1px solid black',
+	position:'absolute'
+}
+
 

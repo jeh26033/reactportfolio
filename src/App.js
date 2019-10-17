@@ -5,6 +5,7 @@ import Sidebar from './components/layout/sidebar.js';
 import FloatingJ from './components/layout/floatingj.js';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 
 function App() {

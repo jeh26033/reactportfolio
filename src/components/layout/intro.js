@@ -4,13 +4,12 @@ import React from 'react';
 function Intro() {
 	return (
 		<React.Fragment>
-        <div style={gridItemA}>
-          <h1 style={largeText} className= "knockout">.joseph</h1>
-        </div>
-        <div style={gridItemB}>
-          <h1 style={gridItemc}>Web Designer</h1>
-        </div>
-
+	        <div className="introGridA" style={gridItemA}>
+	          <h1 style={largeText} className= "knockout largeText">.joseph</h1>
+	        </div>
+	        <div className="introGridB" style={gridItemB}>
+	          <h1 style={gridItemc}>Web Designer</h1>
+	        </div>
         </React.Fragment>
 	)
 }

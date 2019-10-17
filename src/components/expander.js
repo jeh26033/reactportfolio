@@ -38,53 +38,57 @@ export default class Expander extends Component {
 			<React.Fragment>
 				<div style={presenter} className="wrapper">
 				  <div className="cards">
-
 				    <div className="card is-collapsed ">
-				    <img className="img-fluid exampleImg" src={"/discord-logo-image.jpg"} alt="Buddy Bot logo" />
 				      <div className="cardInner  js-expander">
-				        <span>Buddy<br/> Bot</span>
+				      <img className="img-fluid exampleImg" src={"/discord-logo-image.jpg"} alt="Buddy Bot logo" />
+				        <div>Buddy<br/> Bot</div>
 				      </div>
 				      <div className="cardExpander">
-				        <i className="fa fa-close  js-collapser"></i>
-				        lorem ipsum
-				      </div>
+				     <h3> <a href="https://github.com/jeh26033/Buddy-Bot"> BuddyBot the Discord Robot</a> </h3>
+				       	<p>What started as a joke project with some Discord friends, Buddy soon turned into much more for me. Buddy is the culmination of about 8 months of sporadic work and learning, and in the end, could:
+				       	</p>
+				       	<ul>
+				       		<li>Keep track of 'Starred' messages </li>
+				       		<li>Tabulate user scores based on a voting system</li>
+				       		<li>Auto Moderate discussion</li>
+				       		<li>Access Dota API's to gather statistics from our games</li>
+				       		<li>Parse wiki's for Esports information</li>
+				       		<li>Assign roles based on reactions to messages</li>
+				       	</ul>
+				       	<div></div>
+					  </div>
 				    </div>
 
 				    <div className=" card is-collapsed ">
-				     <img className="img-fluid exampleImg" src={"/pug.jpg"} alt="pug picture" />
 				      <div className="cardInner  js-expander">
-				        <span>Mountainside<br/> Pugs</span>
+				      <img className="img-fluid exampleImg" src={"/pug.jpg"} alt="pug picture" />
+				        <div>Mountainside<br/> Pugs</div>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
 				        lorem ipsum
 				      </div>
 				    </div>
-
 				    <div className=" card  is-collapsed ">
-				     <img className="img-fluid exampleImg" src={"/grid-icon.png"} alt="Buddy Bot logo" />
 				      <div className="cardInner  js-expander">
-				        <span>Grid<br/> Homepage</span>
+				       <img className="img-fluid exampleImg" src={"/grid-icon.png"} alt="Buddy Bot logo" />
+				        <div>Grid<br/> Homepage</div>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
 				        lorem ipsum
 				      </div>
 				    </div>
-
 				    <div className=" card  is-collapsed ">
-				     <img className="img-fluid exampleImg" src={"/htmlicon.png"} alt="Buddy Bot logo" />
-				      <div className="cardInner  js-expander">
-				        <span>Page<br/> Examples</span>
+				      <div className="cardInner js-expander">
+				      <img className="img-fluid exampleImg" src={"/htmlicon.png"} alt="Buddy Bot logo" />
+				        <div>Page<br/> Examples</div>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
 				        lorem ipsum
 				      </div>
 				    </div>
-
-				   
-
 				  </div>
 
 				</div>

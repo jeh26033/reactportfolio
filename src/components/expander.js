@@ -37,50 +37,46 @@ export default class Expander extends Component {
 		return (
 			<React.Fragment>
 				<div style={presenter} className="wrapper">
-
 				  <div className="cards">
 
 				    <div className=" card is-collapsed ">
+				    <img classB="img-responsive margin-auto" src="#MISCPATH#image.jpg/png/gif" alt="" />
 				      <div className="cardInner  js-expander">
-				        <span>Card</span>
-				        <i className="fa fa-folder-o"></i>
+				        <span>Buddy<br/> Bot</span>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
-				        Expander
+				        lorem ipsum
 				      </div>
 				    </div>
 
 				    <div className=" card is-collapsed ">
 				      <div className="cardInner  js-expander">
-				        <span>Card</span>
-				        <i className="fa fa-folder-o"></i>
+				        <span>Mountainside<br/> Pugs</span>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
-				        Expander
+				        lorem ipsum
 				      </div>
 				    </div>
 
 				    <div className=" card  is-collapsed ">
 				      <div className="cardInner  js-expander">
-				        <span>Card</span>
-				        <i className="fa fa-folder-o"></i>
+				        <span>Grid<br/> Homepage</span>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
-				        Expander
+				        lorem ipsum
 				      </div>
 				    </div>
 
 				    <div className=" card  is-collapsed ">
 				      <div className="cardInner  js-expander">
-				        <span>Card</span>
-				        <i className="fa fa-folder-o"></i>
+				        <span>Page<br/> Examples</span>
 				      </div>
 				      <div className="cardExpander">
 				        <i className="fa fa-close  js-collapser"></i>
-				        Expander
+				        lorem ipsum
 				      </div>
 				    </div>
 
@@ -111,8 +107,8 @@ const work = {
 }
 
 const presenter = {
-	gridArea:'2/10/span 6/ span 10',
-	backgroundColor:"#ccc",
+	gridArea:'2/7/span 6/ span 10',
+	
 }
 
 

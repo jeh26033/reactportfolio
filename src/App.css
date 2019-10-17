@@ -47,43 +47,20 @@ a:hover {
   height: 100vh;
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: left;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-}
-
-.subTitle {
-  font-size: 3em;
-}
-
-
 .cards {
   padding: 15px;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
-  margin: 15px; 
-  width: calc((100% / 4) - 30px);
   transition: all 0.2s ease-in-out;
 }
 
 .card:hover .cardInner {
-  background-color:  #1abc9c;
   transform: scale(1.05);
+  background-color: unset;
 }
 
 .cardInner {
@@ -91,9 +68,9 @@ a:hover {
   padding: 30px;
   position: relative;
   cursor: pointer;
-  background-color: gray;
+  background-color: #000;
   color: lightgray;
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.2s ease-in-out;
@@ -131,8 +108,13 @@ a:hover {
 }
 
 .is-expanded > .cardInner { 
-  background-color:#1abc9c;
+  background-color: unset;
+  border: 5px solid white;
 } 
+
+.is-expanded {
+  background-color: unset;
+}
 
 .is-expanded > .cardInner:after{
   content: "";
@@ -142,6 +124,7 @@ a:hover {
   width: 0;
   position: absolute;
   bottom: -30px;
+  background-color: none;
   left: calc(50% - 15px);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;

@@ -39,8 +39,8 @@ export default class Expander extends Component {
 				<div style={presenter} className="wrapper">
 				  <div className="cards">
 
-				    <div className=" card is-collapsed ">
-				    <img classB="img-responsive margin-auto" src="#MISCPATH#image.jpg/png/gif" alt="" />
+				    <div className="card is-collapsed ">
+				    <img className="img-fluid exampleImg" src={"/discord-logo-image.jpg"} alt="Buddy Bot logo" />
 				      <div className="cardInner  js-expander">
 				        <span>Buddy<br/> Bot</span>
 				      </div>
@@ -51,6 +51,7 @@ export default class Expander extends Component {
 				    </div>
 
 				    <div className=" card is-collapsed ">
+				     <img className="img-fluid exampleImg" src={"/pug.jpg"} alt="pug picture" />
 				      <div className="cardInner  js-expander">
 				        <span>Mountainside<br/> Pugs</span>
 				      </div>
@@ -61,6 +62,7 @@ export default class Expander extends Component {
 				    </div>
 
 				    <div className=" card  is-collapsed ">
+				     <img className="img-fluid exampleImg" src={"/grid-icon.png"} alt="Buddy Bot logo" />
 				      <div className="cardInner  js-expander">
 				        <span>Grid<br/> Homepage</span>
 				      </div>
@@ -71,6 +73,7 @@ export default class Expander extends Component {
 				    </div>
 
 				    <div className=" card  is-collapsed ">
+				     <img className="img-fluid exampleImg" src={"/htmlicon.png"} alt="Buddy Bot logo" />
 				      <div className="cardInner  js-expander">
 				        <span>Page<br/> Examples</span>
 				      </div>
@@ -107,7 +110,7 @@ const work = {
 }
 
 const presenter = {
-	gridArea:'2/7/span 6/ span 10',
+	gridArea:'2/4/span 2/ span 13',
 	
 }
 

@@ -12,8 +12,7 @@
   justify-content: center;  
   font-size: calc(10px + 2vmin);  
   color: white; 
-
- }  
+}  
 
  .subTitle {  
   font-size: 3em; 
@@ -165,6 +164,10 @@ a:hover {
 .is-inactive {
   pointer-events: none;
   opacity: 0;
+}
+
+.exampleImg {
+  height: 183px;
 }
 
 @media screen and (min-width: 992px) {

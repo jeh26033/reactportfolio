@@ -6,30 +6,14 @@ import Expand from './expand.js'
 
 
 export default class Expander extends Component {
-	// constructor(props){
-	// 	super(props)
-	// 	this.state = {isClicked:false};
 
-	//     // This binding is necessary to make `this` work in the callback
-	//     this.handleClick = this.handleClick.bind(this);
-	// }
-
-	// handleClick() {
- //    	this.setState(state => ({
- //    		isClicked : this.state.isClicked=true
- //    	}));
- //    	console.log(this.state.isClicked)
-
- //  	}
-	
+	//rebuild this to not use Jquery
 	componentDidMount(){
 		console.log('hello')
 		let $Card = $('.card');
 		//open and close card when clicked on card
 		$Card.find('.js-expander').click(function() {
-
 		  let $thisCard = $(this).closest('.card');
-
 		  if ($thisCard.hasClass('is-collapsed')) {
 		    $Card.not($thisCard).removeClass('is-expanded').addClass('is-collapsed').addClass('is-inactive');
 		    $thisCard.removeClass('is-collapsed').addClass('is-expanded');
@@ -45,16 +29,7 @@ export default class Expander extends Component {
 		    $Card.not($thisCard).removeClass('is-inactive');
 		  }
 		});
-
-		//close card when click on cross
-		$Card.find('.js-collapser').click(function() {
-
-		  let $thisCard = $(this).closest('.card');
-
-		  $thisCard.removeClass('is-expanded').addClass('is-collapsed');
-		  $Card.not($thisCard).removeClass('is-inactive');
-
-		});
+		
 	}
 	
 

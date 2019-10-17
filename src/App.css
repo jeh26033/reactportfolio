@@ -68,22 +68,6 @@ a:hover {
   font-size: 3em;
 }
 
-.slide1 {
-  top:0%;
-  left:0%;
-}
-.slide2 {
-  top:5%;
-  left:5%;
-}
-.slide3 {
-  top:10%;
-  left:10%;
-}
-.slide4 {
-  top:15%;
-  left:15%;
-}
 
 .cards {
   padding: 15px;
@@ -183,17 +167,20 @@ a:hover {
 
 @media screen and (min-width: 992px) {
 
-  .card:nth-of-type(3n+2) .card__expander {
+  .card:nth-of-type(3n+2) .cardExpander {
     margin-left: calc(-100% - 30px);
   }
-  .card:nth-of-type(3n+3) .card__expander {
+
+  .card:nth-of-type(3n+3) .cardExpander {
     margin-left: calc(-200% - 60px);
   }
-  .card:nth-of-type(3n+4) {
-    clear: left;
+
+  .card:nth-of-type(3n+4) .cardExpander {
+    margin-left: calc(-300% - 90px);
   }
-  .card__expander {
-    width: calc(300% + 60px);
+
+  .cardExpander {
+    width: calc(415% + 60px);
   }
 
 }

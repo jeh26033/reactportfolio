@@ -8,8 +8,9 @@ function Intro() {
 	          <h1 style={largeText} className= "knockout largeText">.joseph</h1>
 	        </div>
 	        <div className="introGridB" style={gridItemB}>
-	          <h1 style={gridItemc}>Web Designer</h1>
+	          <h1 className="introSubTitle hidden-sm" style={gridItemc}>Web Designer</h1>
 	        </div>
+
         </React.Fragment>
 	)
 }
@@ -29,7 +30,7 @@ const gridItemB = {
 }
 
 const gridItemc = {
-	paddingTop:'3em',
+
 
 }
 
@@ -38,6 +39,7 @@ const largeText = {
 	position:'absolute',
 	top:'6%',
  	left:'10%',
+ 	fontSize:'15em'
   	
 }
 export default Intro;

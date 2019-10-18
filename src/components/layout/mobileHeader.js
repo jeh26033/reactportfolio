@@ -6,11 +6,12 @@ import {
   NavLink,
   useRouteMatch
 } from "react-router-dom";
+
 import About from '../pages/about.js';
 import Work from '../pages/work.js';
-import Intro from './intro.js'
+import MobileIntro from './mobileIntro.js'
 
-export default function Header() {
+export default function MobileHeader() {
 	return (
 		<Router>
 			<div className="gridHeader" style={gridHeader}>
@@ -45,7 +46,7 @@ export default function Header() {
 			</div>
 			
 			<Route exact path="/" render={props => (               
-				<Intro />
+				<MobileIntro />
               )} />
             <Route path="/about" component={About} />
             <Route path="/work" component={Work} />
@@ -79,11 +80,11 @@ const gridHeader = {
 	gridArea:'10 / 1 / span 1 / span 20',
 	borderTop:'1px solid white',
 	color:'#fff',
-	paddingLeft:'82px'
 }
 
 const gridUl = {
-	display: 'inline-flex',
+	
+
 	listStyleType:'none',
 	textAlign:'center',
 	fontSize:'2em'

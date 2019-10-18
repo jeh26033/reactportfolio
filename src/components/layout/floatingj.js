@@ -4,7 +4,7 @@ import React from 'react';
 export default function FloatingJ() {
 	return (
 
-	    <div style={jContainer} className="">
+	    <div style={jContainer} className="jContainer">
 	    	<span className="knockout">.j</span>
 	    </div>
 	)
@@ -16,6 +16,7 @@ const jContainer = {
 	backgroundColor:'#fff',
 	fontSize:'3em',
 	textAlign:'center',
+	minWidth:'86px'
 }
 
 

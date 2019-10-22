@@ -18,14 +18,14 @@ function MobileIntro() {
 
 
 const gridItemA = {
-	gridArea:'1/3/ span 2 / span 18',
+	gridArea:'1/3/ span 2 / span 7',
 	backgroundColor:'#fff',
 	zIndex:'100',
 }
 
 
 const gridItemB = {
-	gridArea:'3/3/ span 1 / span 18',
+	gridArea:'3/5/ span 1 / span 6',
 	backgroundColor:'#fff',
 	zIndex:'100',
 	textAlign:'right',

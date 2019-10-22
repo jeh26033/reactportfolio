@@ -9,15 +9,19 @@ import {
 
 import About from '../pages/about.js';
 import Work from '../pages/work.js';
+
 import MobileIntro from './mobileIntro.js'
+import MobileMenu from './mobileHeaderExpander.js'
+	
+
 
 export default function MobileHeader() {
 	return (
 		<Router>
-			<div className="gridHeader" style={gridHeader}>
+			<div className="gridHeader gridHeaderMobile" style={gridHeader}>
 				<header >
 					<ul style={gridUl}>
-
+						<MobileMenu />
 						<li style={linkStyle} className="navigation">
 							<OldSchoolMenuLink 
 								label="home" 
@@ -39,17 +43,14 @@ export default function MobileHeader() {
 								to="/work">
 							</OldSchoolMenuLink>
 						</li>
-
 					</ul>
-
 				</header>
 			</div>
-			
-			<Route exact path="/" render={props => (               
-				<MobileIntro />
-              )} />
-            <Route path="/about" component={About} />
-            <Route path="/work" component={Work} />
+				<Route exact path="/" render={props => (               
+					<MobileIntro />
+	              )} />
+	            <Route path="/about" component={About} />
+	            <Route path="/work" component={Work} />
 
 		</Router>
 	)
@@ -77,18 +78,18 @@ const linkStyle = {
 }
 
 const gridHeader = {
-	gridArea:'10 / 1 / span 1 / span 20',
+	gridArea:'10 / 1 / span 2 / span 10',
 	borderTop:'1px solid white',
 	color:'#fff',
 }
 
 const gridUl = {
-	
-
 	listStyleType:'none',
-	textAlign:'center',
-	fontSize:'2em'
+	textAlign:'left',
+	fontSize:'2em',
+	paddingLeft:'0px',
 }
+
 
 
 

@@ -7,7 +7,7 @@ function Intro() {
 	        <div className="introGridA" style={gridItemA}>
 	          <h1 style={largeText} className= "largeText">.joseph</h1>
 	          <h2 style={notAsLargeText} className= "">web Developer</h2>
-	         <p style={evenSmallerText} className="" >front end developer / web design / freelancer / hot pocket connoisseur</p>
+	         <p style={evenSmallerText} className="" >front end developer / web designer / freelancer / hot pocket connoisseur</p>
 	        </div>
 	      
         </React.Fragment>

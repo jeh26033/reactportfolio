@@ -42,10 +42,12 @@ const sideBarLinks = {
 
 const sideBarLinksLi = {
 	display: 'inline-flex',
-	padding:'0px .5em'
+	padding:'0px .5em',
+	cursor: 'pointer',
 }
 
 const sideBar = {
+	zIndex:'5',
 	gridArea: '1 / 1 / span 10 / span 1',
 	borderRight: '1px solid white',
 	position: 'relative'

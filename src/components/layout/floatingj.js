@@ -12,6 +12,7 @@ export default function FloatingJ() {
 
 
 const jContainer = {
+	zIndex:'5',
 	gridArea:'10/1/span 1/span 1',
 	backgroundColor:'#fff',
 	fontSize:'3em',

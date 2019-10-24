@@ -76,6 +76,7 @@ const linkStyle = {
 }
 
 const gridHeader = {
+	zIndex:'5',
 	gridArea:'10 / 1 / span 1 / span 20',
 	borderTop:'1px solid white',
 	color:'#fff',

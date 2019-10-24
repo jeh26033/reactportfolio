@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
+import './particle.scss';
 import Header from './components/layout/header.js';
 import Sidebar from './components/layout/sidebar.js';
 import FloatingJ from './components/layout/floatingj.js';
 import MobileHeader from './components/layout/mobileHeader.js';
-
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -26,23 +24,30 @@ const Default = ({ children }) => {
   const isNotMobile = useMediaQuery({ minWidth: 768 })
   return isNotMobile ? children : null
 }
- 
-function App() {
-  return (
+
+
+
+
+export default class App extends Component {
+  render(){
+    return (
       <Router>
         <div className = "App">
+        <div className="animation-wrapper">
           <div className="gridContainer">
-            <Mobile><MobileHeader /></Mobile>
-            <Default><Header /></Default>
-            <><Sidebar/></>
-            <Default><FloatingJ/></Default>
+            
+              <Mobile><MobileHeader /></Mobile>
+              <Default><Header /></Default>
+              <Default><Sidebar/></Default>
+              <Default><FloatingJ/></Default>
+              <div className="particle particle-1"></div>
+              <div className="particle particle-2"></div>
+              <div className="particle particle-3"></div>
+              <div className="particle particle-4"></div>
+            </div>
           </div>
         </div>
       </Router>
-  );
+    );
+  }
 }
-
-
-
-
-export default App;

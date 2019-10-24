@@ -1,12 +1,10 @@
 /* Config */
 $color-particle:#fff;
-
-
 $spacing: 2560px;
 $time-1: 60s;
-$time-2: 120s;
-$time-3: 240s;
-$time-4: 600s;
+$time-2: 80s;
+$time-3: 100s;
+$time-4: 400s;
 
 
 /* Pauls awesome mixin thanks Paul!*/
@@ -23,15 +21,39 @@ $time-4: 600s;
    box-shadow: particles($max);
 
 }
-
-/* Styles */
-html, body {
-    height: 100%;
+.particles > .particle {
+  border-radius: 100%;
+  background: transparent;
+  
+  position: absolute;
+  
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+  &.smaller {
+    width: 5px;
+    height: 5px;
+  }
+  &.small {
+    width: 10px;
+    height: 10px;
+  }
+  &.normal {
+    width: 15px;
+    height: 15px;
+  }
+  &.big {
+    width: 20px;
+    height: 20px;
+  }
+  &.bigger {
+    width: 25px;
+    height: 25px;
+  }
 }
-
 .particle,
 .particle:after {
-  background: transparent;
+  background: green;
 }
 
 .particle:after {

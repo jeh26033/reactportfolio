@@ -5,9 +5,10 @@ function Intro() {
 	return (
 		<React.Fragment>
 	        <div className="introGridA" style={gridItemA}>
-	          <h1 style={largeText} className= "largeText">.joseph</h1>
-	          <h2 style={notAsLargeText} className= "">web Developer</h2>
-	         <p style={evenSmallerText} className="" >front end developer / web designer / freelancer / hot pocket connoisseur</p>
+	        	<h1 style={largeText} className= "largeText">{`.joseph {`}</h1>
+	        	<p style={notAsLargeText}>web-developer;</p>
+	        	<p style={evenSmallerText}>front-end-developer;<br/> web-designer; <br/>freelancer;<br/>hot-pocket-connoisseur;</p>
+	        	<h1 style={largeText} className= "largeText">{`}`}</h1>
 	        </div>
 	      
         </React.Fragment>
@@ -21,27 +22,22 @@ const gridItemA = {
 	color:'#9E9E9E',
 }
 
-
-
-
-
 const largeText = {
 	textShadow:'1px 10px 2px purple',
- 	fontSize:'13em',
+ 	fontSize:'12em',
  	textAlign:'',
  	fontWeight:'bold',
 }
 
 const notAsLargeText = {
-	textAlign:'right',
- 	fontSize:'5em',
+ 	fontSize:'3em',
  	fontWeight:'bold',
  	color:'#fff'
 }
 
 const evenSmallerText = {
-	textAlign:'left',
- 	fontSize:'2em',
+	
+ 	fontSize:'1em',
  	fontWeight:'bold',
  	color:'#fff'
 }

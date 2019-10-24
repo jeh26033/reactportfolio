@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-
-
-
-
 export default class MobileMenu extends Component {
 
 	//rebuild this to not use Jquery

@@ -23,6 +23,7 @@ const sideBarText = {
 	fontSize:'3em',
 	position:'absolute',
 	paddingTop:'.5em',
+	paddingBottom:'20px',
 	width:'4em'
 }
 
@@ -37,8 +38,10 @@ const sideBarLinks = {
 	width:'5em',
 	fontWeight:'bold',
 	fontSize:'1.7em',
+	paddingBottom:'20px',
 	paddingTop:'.8em'
 }
+
 
 const sideBarLinksLi = {
 	display: 'inline-flex',
@@ -47,6 +50,7 @@ const sideBarLinksLi = {
 }
 
 const sideBar = {
+	backgroundColor:'#132f4a',
 	zIndex:'5',
 	gridArea: '1 / 1 / span 10 / span 1',
 	borderRight: '1px solid white',

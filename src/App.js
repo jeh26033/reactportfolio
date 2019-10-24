@@ -44,6 +44,7 @@ export default class App extends Component {
               <div className="particle particle-2"></div>
               <div className="particle particle-3"></div>
               <div className="particle particle-4"></div>
+              <div className="particle particle-5"></div>
             </div>
           </div>
         </div>

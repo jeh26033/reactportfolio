@@ -77,7 +77,17 @@ export default class Expander extends Component {
 				</div>
 
 				<div style ={displayBox} className={`box ${isBoxVisible1? "" : "hidden"}`}>
-			    	<p>I'm the box 1</p>
+			    	<p><a href="https://github.com/jeh26033/Buddy-Bot"> BuddyBot the Discord Robot</a> 
+				       	<p>What started as a joke project with some Discord friends, Buddy soon turned into much more for me. Buddy is the culmination of about 8 months of sporadic work and learning, and in the end, could:
+				       	</p>
+				       	<ul>
+				       		<li>Keep track of 'Starred' messages </li>
+				       		<li>Tabulate user scores based on a voting system</li>
+				       		<li>Auto Moderate discussion</li>
+				       		<li>Access Dota API's to gather statistics from our games</li>
+				       		<li>Parse wiki's for Esports information</li>
+				       		<li>Assign roles based on reactions to messages</li>
+				       	</ul></p>
 			    </div>
 			    <div style ={displayBox} className={`box ${isBoxVisible2? "" : "hidden"}`}>
 			    	<p>I'm the box 2</p>

@@ -17,7 +17,7 @@ function Intro() {
 
 
 const gridItemA = {
-	gridArea:'2/3/span 4/span 9',
+	gridArea:'2/3/span 4/span 11',
 	zIndex:'5',
 	color:'#9E9E9E',
 }

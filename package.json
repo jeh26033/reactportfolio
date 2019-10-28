@@ -8,6 +8,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
+    "particle.js": "^1.0.7",
     "pts": "^0.8.10",
     "react": "^16.10.2",
     "react-addons-css-transition-group": "^15.6.2",

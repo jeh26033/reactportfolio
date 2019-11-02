@@ -37,7 +37,7 @@ export default class App extends Component {
         <div  className="animation-wrapper">
           <div id="gridContainer" className="gridContainer">
 
-            <Gyser />
+
               <Mobile><MobileHeader /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>

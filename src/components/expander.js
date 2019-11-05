@@ -197,6 +197,5 @@ const card3Content = {
 }
 
 const card4Content = {
-
 	gridArea:'5/7/span 2/ span 2',
 }

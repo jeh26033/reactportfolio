@@ -50,7 +50,7 @@ const sideBarLinksLi = {
 }
 
 const sideBar = {
-	backgroundColor:'#132f4a',
+	
 	zIndex:'5',
 	gridArea: '1 / 1 / span 10 / span 1',
 	borderRight: '1px solid white',

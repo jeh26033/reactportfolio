@@ -3,23 +3,28 @@ import React from 'react';
 
 function Intro() {
 	return (
-		<React.Fragment>
-	        <div className="introGridA" style={gridItemA}>
-	        	<h1 style={largeText} className= "largeText">{`.joseph {`}</h1>
-	        	<p style={notAsLargeText}>web-developer;</p>
-	        	<p style={evenSmallerText}>front-end-developer;<br/> web-designer; <br/>freelancer;<br/>hot-pocket-connoisseur;</p>
-	        	<h1 style={largeText} className= "largeText">{`}`}</h1>
-	        </div>
+
+
+		<div style={intro} className={"intro"}>
+      
+        	<h1 style={largeText} className= "largeText">{`.joseph {`}</h1>
+        	<p style={notAsLargeText}>web-developer;</p>
+        	<p style={evenSmallerText}>front-end-developer;<br/> web-designer; <br/>freelancer;<br/>hot-pocket-connoisseur;</p>
+        	<h1 style={largeText} className= "largeText">{`}`}</h1>
+
+	    </div>
 	      
-        </React.Fragment>
+
 	)
 }
 
 
-const gridItemA = {
-	gridArea:'2/3/span 4/span 11',
+const intro = {
+	gridArea:'1/2/span 9/span 11',
 	zIndex:'5',
+	padding:'3em',
 	color:'#9E9E9E',
+	
 }
 
 const largeText = {
@@ -30,9 +35,10 @@ const largeText = {
 }
 
 const notAsLargeText = {
+	textShadow:'1px 4px 2px purple',
  	fontSize:'3em',
  	fontWeight:'bold',
- 	color:'#fff'
+ 	color:'#9E9E9E'
 }
 
 const evenSmallerText = {

@@ -5,7 +5,7 @@ class Tab extends Component {
 
   onClick = () => {
     const { label, onClick } = this.props;
-    console.log('that tickles', {onClick})
+
     onClick(label);
   }
 
@@ -15,22 +15,17 @@ class Tab extends Component {
       props: {
         activeTab,
         label,
-        position,
-        inactivePosition,
-        style
       },
     } = this;
-    console.log(this)
 
-    let className = 'tab-list-item';
+    let className = `tab-list-item ${this.props.label}`;
  
     if (activeTab === label) { 
       className += ' tab-list-active';
     }
-
+    console.log(this.props)
     return (
       <div
-        style={style}
         className={className}
         onClick={onClick}
       >

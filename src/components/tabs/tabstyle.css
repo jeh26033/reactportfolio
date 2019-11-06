@@ -1,10 +1,11 @@
-.tab-list {
 
-}
+
 .tab-list-item {
 	background-color:#fff;
-	position: relative;
-	transition: all .5s;
+	position: absolute;
+	transition: all 1.5s;
+	width: 300px;
+	height: 300px;
 }
 
 .tab-content {
@@ -13,24 +14,42 @@
   	grid-area:1/13/span 9/ span 8;
   	z-index: 5;
   	padding:3em;
+
 }
 
 
 .tab-list-active {
-	background-color: #f0f;
+	left: 10%;
+	top: 10%;
+	border: 3px solid red;
+	transition: all .5s;
+	z-index: 4;
+	
+}
+.tab-list-item:nth-child(1){
 
-
-	grid-area: 2/3/span 4/ span 4;
+	border: 1px solid black;
+	z-index: 3;
+	transition: all .5s;
+	background-color: #ccc;
 
 }
 
-.position2{
-	grid-area:3/4/span 4/ span 4;
+.tab-list-item:nth-child(2){
+	left: 10%;
+	top: 50%;
+	border: 1px solid black;
+	z-index: 3;
+	transition: all .5s;
+	background-color: #ccc;
 
 }
 
-.position3{
-	grid-area:4/5/span 4/ span 4;
+.tab-list-item:nth-child(3){
+	left:30%;
+	top:30%;
+	transition: all .5s;
+	background-color: #ddd;
 }
 
-.number2 {}
+.Example1 { background-color: red!important; }

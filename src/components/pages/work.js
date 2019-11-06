@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import Expander from '../expander.js'
-import Tabs from '../tabs/tabs.js'//will need to work to make this better, once I get better
+import Tabs from '../tabs/tabs.js'
 
 export default function Work() {
-
 	return (
-
-
 		<React.Fragment >
-		{/*<Expander />*/}
+		
 		   <Tabs>
-				<div label="Example1" position='1'>
+				<div label="Example1" className="example1" position='1'>
 				what in the world
 				</div>
 				<div  label="Example2" position='2'>
@@ -20,9 +16,9 @@ export default function Work() {
 				Nothing to see here, this tab is!
 				</div>
     		</Tabs> 
+
 		</React.Fragment>
 	);
-
 }
 
 

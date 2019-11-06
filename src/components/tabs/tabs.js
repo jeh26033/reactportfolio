@@ -6,71 +6,68 @@ import Tab from './tab.js';
 class Tabs extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
-
   }
 
   constructor(props) {
     super(props);
-
+    console.log('state',this)
     this.state = {
-      activeTab: this.props.children[0].props.label,
-      inactiveTab1: this.props.children[1].props.label,
-      inactiveTab2: this.props.children[2].props.label,
-      tabsList: [],
+      activeTab: this.props.children[2].props.label,
+      list: [...this.props.children]
     };
+
   }
 
-  onClickTabItem = (tab) => {
-
+  onClickTabItem = (tab, index) => {
+    Array.prototype.move = function (from, to) { 
+      this.splice(to, 0, this.splice(from, 1)[0]);
+    };
+    let list = this.state.list;
+    let activePosition= list[2];
+    list.move(index, 2);
     this.setState({ 
-      activeTab: tab
+      activeTab:tab,
     });
-  }
 
+  }
 
   render() {
 
     const {
       onClickTabItem,
-
-
+      onRemoveItem,
       props: {
+        className,
         children,
-        position,
+        index
       },
       state: {
         activeTab,
-        inactiveTab1,
-        inactiveTab2,
+        list
       }
     } = this;
 
-    const tabs = this.props.children;
-    
 
     return (
     <React.Fragment>
-      {children.map((child) => {
+      {list.map((child, index) => {
         const { label } = child.props;
-        
-
           return (
-            <Tab
-              activeTab={activeTab}
-              key={label}
-              label={label}
-              onClick={onClickTabItem}
-        
-            />
+            
+              <Tab
+                className={className}
+                activeTab={activeTab}
+                key={label}
+                label={label}
+                onClick={() => this.onClickTabItem(label,index)}        
+              />
+
           );
-      
-
-        
       })} 
-
         <div className="tab-content">
-          {children.map((child) => {
+          {list.map((child) => {
             if (child.props.label !== activeTab) return undefined;
+            console.log('child',child)
             return child.props.children;
           })}
         </div>
@@ -79,6 +76,4 @@ class Tabs extends Component {
   }
   
 }
-
-
 export default Tabs;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './tabstyle.css'
 import Tab from './tab.js';
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
 class Tabs extends Component {
   static propTypes = {
@@ -53,7 +54,7 @@ class Tabs extends Component {
       {list.map((child, index) => {
         const { label } = child.props;
           return (
-            
+  
               <Tab
                 className={className}
                 activeTab={activeTab}
@@ -61,6 +62,8 @@ class Tabs extends Component {
                 label={label}
                 onClick={() => this.onClickTabItem(label,index)}        
               />
+      
+
 
           );
       })} 

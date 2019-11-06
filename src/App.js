@@ -32,12 +32,13 @@ const Default = ({ children }) => {
 export default class App extends Component {
   render(){
     return (
+
       <Router>
+      
         <div className="App">
         <div  className="animation-wrapper">
           <div id="gridContainer" className="gridContainer">
 
-            
               <Mobile><MobileHeader /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>

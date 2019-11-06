@@ -3,9 +3,14 @@
 .tab-list-item {
 	background-color:#fff;
 	position: absolute;
-	transition: all 1.5s;
+	transition: all .75s ease-in;
 	width: 300px;
 	height: 300px;
+	cursor: pointer;
+	border: 3px solid black;
+	text-align: center;
+	font-size: 3em;
+	opacity: .80;
 }
 
 .tab-content {
@@ -14,42 +19,31 @@
   	grid-area:1/13/span 9/ span 8;
   	z-index: 5;
   	padding:3em;
-
 }
-
 
 .tab-list-active {
-	left: 10%;
-	top: 10%;
-	border: 3px solid red;
-	transition: all .5s;
-	z-index: 4;
-	
-}
-.tab-list-item:nth-child(1){
-
-	border: 1px solid black;
-	z-index: 3;
-	transition: all .5s;
-	background-color: #ccc;
-
+	left: 30%;
+	top: 40%;
+	z-index: 5;
+	opacity: 100;
 }
 
 .tab-list-item:nth-child(2){
-	left: 10%;
-	top: 50%;
-	border: 1px solid black;
-	z-index: 3;
-	transition: all .5s;
-	background-color: #ccc;
-
+	left: 20%;
+	top: 20%;
+	z-index: 2;
 }
 
 .tab-list-item:nth-child(3){
-	left:30%;
-	top:30%;
-	transition: all .5s;
-	background-color: #ddd;
+	left: 25%;
+	top: 30%;
+	z-index: 3;
 }
 
-.Example1 { background-color: red!important; }
+.tab-list-item:nth-child(4){
+	left: 30%;
+	top: 40%;
+	z-index: 3;
+}
+
+

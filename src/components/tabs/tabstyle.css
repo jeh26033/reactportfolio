@@ -1,7 +1,7 @@
 
 
 .tab-list-item {
-	background-color:#fff;
+	color: #9E9E9E;
 	position: absolute;
 	transition: all .75s ease-in;
 	width: 300px;
@@ -10,7 +10,9 @@
 	border: 3px solid black;
 	text-align: center;
 	font-size: 3em;
+	padding-top: 2em;
 	opacity: .80;
+	text-shadow:1px 3px 2px purple;
 }
 
 .tab-content {
@@ -19,31 +21,34 @@
   	grid-area:1/13/span 9/ span 8;
   	z-index: 5;
   	padding:3em;
+
 }
 
 .tab-list-active {
-	left: 30%;
-	top: 40%;
+	left: 30%!important;
+	top: 40%!important;
 	z-index: 5;
-	opacity: 100;
+	opacity: .80;
+	animation-delay: 5s;
+	background-color: rgb(19, 47, 74);
+	visibility: visible!important;
 }
 
 .tab-list-item:nth-child(2){
-	left: 20%;
-	top: 20%;
+	left: 10%;
+	top: 10%;
 	z-index: 2;
 }
 
 .tab-list-item:nth-child(3){
-	left: 25%;
-	top: 30%;
+	left: 20%;
+	top: 20%;
 	z-index: 3;
 }
 
 .tab-list-item:nth-child(4){
 	left: 30%;
-	top: 40%;
+	top: 30%;
 	z-index: 3;
 }
-
 

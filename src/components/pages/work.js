@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Tabs from '../tabs/tabs.js'
-
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
 export default function Work() {
 	return (
 		<React.Fragment >
-		
+
 		   <Tabs>
-		   
+
 				<div label="BuddyBot" position='1'>
 					<span>
 			    		<a href="https://github.com/jeh26033/Buddy-Bot"> BuddyBot the Discord Robot</a> 
@@ -28,11 +28,12 @@ export default function Work() {
 						<p>This was meant to be a site for a local dog breeder that I knew. While we didn't end up moving forward with the site in the end, it was a great learning experience about handling clients, using rails, and putting together a cohesive design. This was one of the first full sites had I built using a framework, and I think the progress from then to know is evident. </p>
 					</span>
 				</div>
-				<div  label="Page Examples" position='3'>
+				<div  label="Pages" position='3'>
 				Nothing to see here, this tab is!
 				</div>
     		</Tabs> 
-    		
+
+
 
 		</React.Fragment>
 	);

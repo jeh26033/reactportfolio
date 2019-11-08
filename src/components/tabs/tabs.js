@@ -13,7 +13,7 @@ class Tabs extends Component {
     super(props);
     console.log('state',this)
     this.state = {
-      activeTab:'',
+      activeTab: this.props.children[2].props.label,
       list: [...this.props.children]
     };
 
@@ -54,7 +54,6 @@ class Tabs extends Component {
       {list.map((child, index) => {
         const { label } = child.props;
           return (
-
               <Tab
                 className={className}
                 activeTab={activeTab}
@@ -62,9 +61,6 @@ class Tabs extends Component {
                 label={label}
                 onClick={() => this.onClickTabItem(label,index)}        
               />
-             
-
-
           );
       })} 
         <div className="tab-content">

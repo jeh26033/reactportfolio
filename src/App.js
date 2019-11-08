@@ -7,9 +7,9 @@ import FloatingJ from './components/layout/floatingj.js';
 import MobileHeader from './components/layout/mobileHeader.js';
 import Gyser from './components/gyser.js';
 
+
 import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 
 
 const Desktop = ({ children }) => {
@@ -38,17 +38,12 @@ export default class App extends Component {
         <div className="App">
         <div  className="animation-wrapper">
           <div id="gridContainer" className="gridContainer">
-
+              <Gyser></Gyser>
               <Mobile><MobileHeader /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>
               <Default><FloatingJ/></Default>
-              
-              <div className="particle particle-1"></div>
-              <div className="particle particle-2"></div>
-              <div className="particle particle-3"></div>
-              <div className="particle particle-4"></div>
-              <div className="particle particle-5"></div>
+
             </div>
           </div>
         </div>

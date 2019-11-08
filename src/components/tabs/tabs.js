@@ -16,7 +16,6 @@ class Tabs extends Component {
       activeTab: this.props.children[2].props.label,
       list: [...this.props.children]
     };
-
   }
 
   onClickTabItem = (tab, index) => {
@@ -53,6 +52,7 @@ class Tabs extends Component {
     <React.Fragment>
       {list.map((child, index) => {
         const { label } = child.props;
+        console.log('rendering list')
           return (
               <Tab
                 className={className}

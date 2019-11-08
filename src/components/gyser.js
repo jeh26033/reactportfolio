@@ -5,111 +5,92 @@ import '../particle.scss';
 
 export default class Gyser extends Component {
   componentDidMount(){
-    let canvas = document.getElementById("mycanvas");
-    let ctx = canvas.getContext("2d");
-    let d = document;
-    let $d = $(d);
-    let w = window;
-    let $w = $(w);
-    let windowWidth = $w.width();
-    let windowHeight = $w.height();
-    let particles = $('.particles'),
-          particleCount = 0,
-          sizes = [
-            15, 20, 25, 35, 45
-          ],
-          colors = [
-            '#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
-            '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
-            '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107', '#FF9800',
-            '#FF5722', '#795548', '#9E9E9E', '#607D8B', '#777777'
-          ],
-          mouseX = $w.width() / 2, 
-          mouseY = $w.height() / 2;
-          
-      $w.on( 'resize' , function () {
-        windowWidth = $w.width();
-        windowHeight = $w.height();
-        console.log('resize')
-      });
+let canvas = document.querySelector('canvas')
+let c = canvas.getContext('2d')
 
-      //start the party
-      $d.on('mousemove' , function ( event ) {
-        event.preventDefault();
-        event.stopPropagation();
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-      })
-      .on('mousedown' , function( event ) {
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-        //starts the particle timer
-        let timer = setInterval(function () {
-          $d.on('mouseup mouseleave', function () {
-            clearInterval(timer);
-          })
-          createParticle(event);
-        }, 1000 / 60)        
-      });
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 
+let gravity = .4,
+    friction = 0
 
-      function createParticle ( event ) {
-        let particle = $('<div class="particle"/>'),
-            size = sizes[Math.floor(Math.random() * sizes.length)],
-            color = colors[Math.floor(Math.random() * colors.length)],
-            negative = size/2,
-            speedHorz = Math.random() * 10,
-            speedUp = Math.random() * 25,
-            spinVal = 360 * Math.random(),
-            spinSpeed = ((36 * Math.random())) * (Math.random() <=.5 ? -1 : 1),
-            otime,
-            time = otime = (1 + (.5 * Math.random())) * 1000,
-            top = (mouseY - negative),
-            left = (mouseX - negative),
-            direction = Math.random() <=.5 ? -1 : 1 ,
-            life = 1;
-        particle
-        .css({
-          height: size + 'px',
-          width: size + 'px',
-          top: top + 'px',
-          left: left + 'px',
-          background: color,
-          transform: 'rotate(' + spinVal + 'deg)',
-          webkitTransform: 'rotate(' + spinVal + 'deg)'
-        })
-        .appendTo( particles );
-       
-        let particleTimer = setInterval(function () {
-          time = time - life;
-          left = left - (speedHorz * direction);
-          top = top - speedUp;
-          speedUp = Math.min(size, speedUp - 1);
-          spinVal = spinVal + spinSpeed;
-          particle
-          .css({
-            height: size + 'px',
-            width: size + 'px',
-            top: top + 'px',
-            left: left + 'px',
-            opacity: ((time / otime)/2) + .25,
-            transform: 'rotate(' + spinVal + 'deg)',
-            webkitTransform: 'rotate(' + spinVal + 'deg)'
-          });
-          
-          if( time <= 0 || left <= -size || left >= windowWidth + size || top >= windowHeight + size ) {
-            particle.remove();
-            
-            clearInterval(particleTimer);
-          }
-        }, 1000 / 60);  
-      }
+let ballsArr = []
+
+window.onresize = e => {
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+  init()
+}
+
+canvas.onclick = e => init()
+
+function init () {
+  ballsArr = []
+  for (let i = 0; i < 140; i++) {
+    let radius = 5 + Math.random() * 41,
+        x = Math.max(radius, Math.min(canvas.width * Math.random() - radius, canvas.width - radius)),
+        y = Math.random() * (canvas.height - 300),
+        dx = (Math.random() - 0.5) * 4,
+        dy = 2,
+        color = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`,
+        stroke = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`
+
+    ballsArr.push(new Ball (x, y, dx, dy, radius, color, stroke))
+  }
+}
+
+function animate () {
+  window.requestAnimationFrame(animate)
+  c.clearRect(0, 0, canvas.width, canvas.height)
+  for (let i = 0; i < ballsArr.length; i++) {
+    ballsArr[i].update()
+  }
+}
+
+class Ball {
+  constructor (x, y, dx, dy, radius, color, stroke) {
+    this._x = x
+    this._y = y
+    this._dx = dx
+    this._dy = dy
+    this._radius = radius
+    this._color = color
+    this._stroke = stroke
+  }
+
+  draw () {
+    c.beginPath()
+    c.arc(this._x, this._y, this._radius, 0, Math.PI * 2)
+    c.fillStyle = this._color
+    c.strokeStyle = this._stroke
+    c.fill()
+    c.stroke()
+    c.closePath()
+  }
+
+  update () {
+    if (this._y + this._radius + this._dy > canvas.height) {
+      this._dy = -this._dy * friction
+      this._dx = this._dx * friction
     }
+    else this._dy += gravity
+
+    if (this._x + this._radius > canvas.width || this._x - this._radius < 0) this._dx = -this._dx
+
+    this._y += this._dy
+    this._x += this._dx
+    this.draw()
+  }
+}
+
+init()
+animate()
+}
+
    render() {
     return(
       <React.Fragment>
-        <div className="particles"></div>
-        <canvas id ="mycanvas" width="100%" height="100%"></canvas>
+        <canvas></canvas>
       </React.Fragment>
     );
     

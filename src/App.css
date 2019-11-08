@@ -4,7 +4,10 @@
     text-align: left; 
   } 
 
-  canvas {display: block; position: fixed;}
+  canvas {
+    display: block;
+    position: fixed;
+  }
 
   .subTitle {  
     font-size: 3em; 

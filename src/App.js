@@ -38,11 +38,15 @@ export default class App extends Component {
         <div className="App">
         <div  className="animation-wrapper">
           <div id="gridContainer" className="gridContainer">
-              <Gyser></Gyser>
+             
               <Mobile><MobileHeader /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>
               <Default><FloatingJ/></Default>
+              <div className="particles"></div> 
+              <div className="particle particle-1"></div>             
+              <div className="particle particle-2"></div>              
+              <div className="particle particle-3"></div>              
 
             </div>
           </div>

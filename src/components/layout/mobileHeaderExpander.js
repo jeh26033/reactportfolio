@@ -1,22 +1,76 @@
 import React, { Component } from 'react';
+
+
+
+
 export default class MobileMenu extends Component {
 
-	//rebuild this to not use Jquery
-	componentDidMount(){
-		console.log('hello from the mobile menu expander')
-		let hamburgerClick = (e) =>{
-			console.log('wow')
-			e.currentTarget.classList.toggle('active');
-		}
-		let hamburger = document.getElementById('hamburger').addEventListener("click", hamburgerClick);
+  constructor(props) {
+    super(props);
+    console.log('state',this)
+    this.state = {
+      isMenuOpen:''
+    };
+    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+
+  setWrapperRef(node) {
+    this.wrapperRef = node;
+  }
+
+    handleClickOutside(event) {
+    	let mobileMenu = document.getElementById('mobileMenu');
+    	let hamburger = document.getElementById('hamburger');
+    	console.log(this.state.isMenuOpen)
+	
+	    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+	    	if (this.state.isMenuOpen) {
+	    		console.log('You clicked outside of me! and the menu is closed!');
+	    		mobileMenu.classList.toggle('menuEmbiggen');
+	    	}
+	    	
+			hamburger.classList.toggle('active')
+			mobileMenu.classList.toggle('menuEmbiggen');
+		    this.setState({ 
+		    	isMenuOpen:true
+		    });
+	    }else{
+	    	console.log('You clicked inside of me!');
+	    }
+		
+
 	}
+	// componentDidMount(){
+	// 	console.log('hello from the mobile menu expander')
+	// 	let hamburgerClick = (e) =>{
+	// 		console.log('wow')
+	// 		e.currentTarget.classList.toggle('active');
+	// 	}
+
+	// 	let embiggen = (e) =>{
+	// 		console.log('wow embiggen')
+	// 		e.currentTarget.classList.toggle('menuEmbiggen');
+
+	// 	}
+	// 	let hamburger = document.getElementById('hamburger').addEventListener("click", hamburgerClick);
+	// 	let mobileMenu = document.getElementById('mobileMenu').addEventListener("click", embiggen)
+	// }
 	
 
 	render() {
 		return (
 			<React.Fragment>
-				<div id="hamburger" className="svgContainer">
-				 	<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 200 200">
+				<div id="hamburger"  className="svgContainer">
+				 	<svg ref={this.setWrapperRef} xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 200 200">
 				        <g strokeWidth="6.5" strokeLinecap="round">
 				          <path
 				            d="M72 82.286h28.75"

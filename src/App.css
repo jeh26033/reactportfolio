@@ -6,9 +6,7 @@
 
   canvas {display: block; position: fixed;}
 
-  .subTitle {  
-    font-size: 3em; 
-  }
+ 
   #mycanvas { 
     position: fixed;
     z-index: 0;
@@ -90,7 +88,7 @@
 
 @media screen and (max-width: 1800px) and (min-width: 992px) {
   .largeText {
-    font-size: 11em!important;
+    font-size: 7em!important;
   }
 
 }
@@ -122,8 +120,8 @@
     padding:1em!important;
   }
 
-  .introGridA {
-    grid-area: 2 / 3 / span 3 / span 13!important;
+  .intro {
+    grid-area: 1 /2 / span 9 / span 14!important;
   }
   .introGridB {
     grid-area: 4/ 5 / span 2 / span 14!important;
@@ -147,6 +145,10 @@
     border-right: 10px solid white
   }
 
+.intro {
+  grid-area: 1 / 1 / span 8 / span 9;
+  background-color: rgb(19, 47, 74);
+}
   .contactText {
     display: none;
   }
@@ -166,10 +168,7 @@
     padding: 1em;
  }
 
- .gridHeader .navigation {
-    display: none;
- }
-
+ 
   .largeText {
     font-size: 5em!important;
   
@@ -180,6 +179,20 @@
   margin: auto;
   cursor: pointer;
 
+}
+/*mobile styles for menu*/
+
+#mobileMenu header>ul {
+ 
+  background-color:rgb(158, 158, 158);
+}
+.menuEmbiggen {
+  transform: translateY(-250%)!important;
+  transition: .25s linear;
+  z-index: 15;
+}
+#hamburger{
+  z-index: 10;
 }
 
 svg {
@@ -235,3 +248,6 @@ path:nth-child(6) {
 }
 
 
+.intro {
+  background-color: rgb(19, 47, 74);
+}

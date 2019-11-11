@@ -13,7 +13,8 @@
 	padding-top: 2em;
 	opacity: .80;
 	text-shadow:1px 3px 2px purple;
-}
+		background-color: rgb(19, 47, 74);
+	}
 
 .tab-content {
 	color: #fff;
@@ -28,8 +29,8 @@
 		left: 30%;
 	top: 30%;
 	z-index: 5;
-	opacity: .80;
-	animation-delay: 5s;
+	opacity: 100;
+	
 	background-color: rgb(19, 47, 74);
 	visibility: visible!important;
 }
@@ -47,8 +48,8 @@
 }
 
 .tab-list-item:nth-child(4){
-	left:10%;
-	top: 10%;
+	left:30%;
+	top: 30%;
 	z-index: 3;
 }
 

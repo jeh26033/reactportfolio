@@ -18,7 +18,7 @@ import MobileMenu from './mobileHeaderExpander.js'
 export default function MobileHeader() {
 	return (
 		<Router>
-			<div className="gridHeader gridHeaderMobile" style={gridHeader}>
+			<div id="mobileMenu" className="gridHeader gridHeaderMobile" style={gridHeader}>
 				<header >
 					<ul style={gridUl}>
 						<MobileMenu />
@@ -81,6 +81,7 @@ const gridHeader = {
 	gridArea:'10 / 1 / span 2 / span 10',
 	borderTop:'1px solid white',
 	color:'#fff',
+	
 }
 
 const gridUl = {

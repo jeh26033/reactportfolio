@@ -4,13 +4,14 @@
     text-align: left; 
   } 
 
+  canvas {display: block; position: fixed;}
 
   .subTitle {  
     font-size: 3em; 
   }
   #mycanvas { 
     position: fixed;
-    
+    z-index: 0;
   }
 
   body {
@@ -234,48 +235,3 @@ path:nth-child(6) {
 }
 
 
-canvas {
-  display: block; 
-  position: fixed;
-  width: 95%;
-  height: 90%;
-  top: 1%;
-    left: 5%;
-    background-color: #123;
-    z-index: 0;
-  }
-.canvasContainer {
-  border: 4px solid red;
-  background-color: #123;
-
-}
-
-.introSubText {
-  top: 16%;
-  left: 5%;
-  position: relative;
-}
-
-
-.intro {
-  z-index:5;
-  color: #9E9E9E;
-  position: relative;
-  grid-area:2/2/span 8/span 6;
-  padding-left: 2em;
-
-}
-
-
-.largeText { 
-  left:0%;
-  width: 500px;
-  height: 150px;
-  top: 16%;
-  position: relative;
-}
-/*div#containerParticles a { border: 1px solid red }
-div#containerParticles a:hover { background: #3498db; }
-div#containerParticles p { position: fixed; top: 22%; font-size: 16px; line-height: 24px; color: #fff; width: 34%; text-align: justify; }
-div#containerParticles p:first-of-type { left: 4%; }
-div#containerParticles p:nth-of-type(2) { left: 60%; }*/

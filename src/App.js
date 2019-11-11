@@ -35,15 +35,13 @@ export default class App extends Component {
 
       <Router>
       
-        <div className="App">
+        <div  className="App">
         <div  className="animation-wrapper">
-          <div id="gridContainer" className="gridContainer">
-              <Gyser></Gyser>
+          <div  id="gridContainer" className="gridContainer">
               <Mobile><MobileHeader /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>
               <Default><FloatingJ/></Default>
-
             </div>
           </div>
         </div>

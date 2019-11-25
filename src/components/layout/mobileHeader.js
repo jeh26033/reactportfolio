@@ -21,7 +21,7 @@ export default function MobileHeader() {
 			<div id="mobileMenu" className="gridHeader gridHeaderMobile" style={gridHeader}>
 				<header >
 					<ul style={gridUl}>
-						<MobileMenu />
+						
 						<li style={linkStyle} className="navigation">
 							<OldSchoolMenuLink 
 								label="home" 
@@ -78,16 +78,17 @@ const linkStyle = {
 }
 
 const gridHeader = {
-	gridArea:'10 / 1 / span 2 / span 10',
+	width:'100%',
 	borderTop:'1px solid white',
 	color:'#fff',
-	
+
 }
 
 const gridUl = {
+	display:'inline-flex',
 	listStyleType:'none',
 	textAlign:'left',
-	fontSize:'2em',
+	fontSize:'1.5em',
 	paddingLeft:'0px',
 }
 

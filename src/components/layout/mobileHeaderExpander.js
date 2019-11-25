@@ -9,7 +9,8 @@ export default class MobileMenu extends Component {
     super(props);
     console.log('state',this)
     this.state = {
-      isMenuOpen:''
+      isMenuOpen: ''
+
     };
     this.setWrapperRef = this.setWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
@@ -27,27 +28,27 @@ export default class MobileMenu extends Component {
     this.wrapperRef = node;
   }
 
-    handleClickOutside(event) {
-    	let mobileMenu = document.getElementById('mobileMenu');
-    	let hamburger = document.getElementById('hamburger');
-    	console.log(this.state.isMenuOpen)
-	
+	handleClickOutside(event) {
+		let mobileMenu = document.getElementById('mobileMenu');
+		let hamburger = document.getElementById('hamburger');
+		console.log(this.state.isMenuOpen);
+
+		//checks if I clicked outside the button. 
 	    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-	    	if (this.state.isMenuOpen) {
-	    		console.log('You clicked outside of me! and the menu is closed!');
-	    		mobileMenu.classList.toggle('menuEmbiggen');
-	    	}
+
+    		// 
 	    	
-			hamburger.classList.toggle('active')
-			mobileMenu.classList.toggle('menuEmbiggen');
-		    this.setState({ 
-		    	isMenuOpen:true
-		    });
+			// 
+			// mobileMenu.classList.toggle('menuEmbiggen');
+
+		 //click inside the button   
 	    }else{
 	    	console.log('You clicked inside of me!');
-	    }
-		
+	    	mobileMenu.classList.toggle('menuEmbiggen');
+	    	hamburger.classList.toggle('active')
 
+
+	    }		
 	}
 	// componentDidMount(){
 	// 	console.log('hello from the mobile menu expander')

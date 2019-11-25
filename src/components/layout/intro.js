@@ -31,7 +31,7 @@ const intro = {
 
 const largeText = {
 	textShadow:'1px 10px 2px purple',
- 	fontSize:'10em',
+ 	fontSize:'9em',
  	textAlign:'',
  	fontWeight:'bold',
 }

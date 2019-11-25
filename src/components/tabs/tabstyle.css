@@ -1,5 +1,26 @@
+*{
+	color:#fff;
+}
 
+.skills {
+	grid-area: 7/2/span 4/span 5;
+	font-size: 1em;
+	padding-left: 10px;
 
+}
+
+.skills>ul{
+	list-style-type: none;
+	columns: 2;
+}
+
+.skills>ul li {
+	text-shadow: 1px 2px 2px purple;
+	color: #9E9E9E;
+	font-size: 1.5em;
+	margin-left: 10px;
+
+}
 .tab-list-item {
 	color: #9E9E9E;
 	position: absolute;
@@ -13,8 +34,8 @@
 	padding-top: 2em;
 	opacity: .80;
 	text-shadow:1px 3px 2px purple;
-		background-color: rgb(19, 47, 74);
-	}
+	background-color: rgb(19, 47, 74);
+}
 
 .tab-content {
 	color: #fff;
@@ -26,7 +47,7 @@
 }
 
 .tab-list-active {
-		left: 30%;
+	left: 30%;
 	top: 30%;
 	z-index: 5;
 	opacity: 100;
@@ -53,3 +74,73 @@
 	z-index: 3;
 }
 
+@media screen and (max-width: 1201px) and (min-width: 768px) {
+ 
+  .tab-list-item {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+
+	.tab-list-active {
+
+		z-index: 5;
+		opacity: 100;
+		background-color: rgb(19, 47, 74);
+		visibility: visible!important;
+	}
+
+	.tab-list-item:nth-child(2){
+		left: 0%;
+		top: 5%;
+		z-index: 2;
+	}
+
+	.tab-list-item:nth-child(3){
+		left: 0%;
+		top: 22%;
+		z-index: 3;
+	}
+
+	.tab-list-item:nth-child(4){
+		left: 5%;
+		top: 39%;
+		z-index: 3;
+	}
+
+
+	.tab-content {
+		grid-area: 1/5/span 9/span 6;
+		padding:10px;
+	}
+
+	.tab-list-item {
+		width: 125px;
+		height: 125px;
+		font-size: 1.5em;
+	}
+
+	.skills {
+		grid-area: 7/1/span 4/span 5;
+		font-size: .75em;
+		padding-left: 10px;
+	}
+	.skills h3 {
+		font-size: 1.25em;
+	}
+	.skills>ul{
+		list-style-type: none;
+		columns: 1;
+		padding-left: 0px;
+	}
+
+	.skills>ul li {
+		text-shadow: 1px 2px 2px purple;
+		color: #fff;
+		font-size: 1.25em;
+		margin-left: 10px;
+
+	}
+}

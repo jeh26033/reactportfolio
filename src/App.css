@@ -5,8 +5,11 @@
   } 
 
   canvas {display: block; position: fixed;}
+ .hightlighted {
+    color: #9E9E9E;
+    text-shadow:1px 2px 2px purple;
+  }
 
- 
   #mycanvas { 
     position: fixed;
     z-index: 0;
@@ -16,7 +19,6 @@
     margin:0px;
     padding:0px;
     background-color: #123;
-/*    background-image: url(stars.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -134,6 +136,7 @@
     left: 13%!important;
   }
 
+
 }
 
 @media screen and (max-width: 767px) {
@@ -163,6 +166,8 @@
     grid-template-columns: repeat(10, 1fr );
   }
 
+ 
+
  .sidebar {
     grid-area: 1 / 1 / span 10 / span 2!important;
     padding: 1em;
@@ -182,17 +187,13 @@
 }
 /*mobile styles for menu*/
 
-#mobileMenu header>ul {
+
+
+#mobileMenu {  
  
-  background-color:rgb(158, 158, 158);
-}
-.menuEmbiggen {
-  transform: translateY(-250%)!important;
-  transition: .25s linear;
-  z-index: 15;
-}
-#hamburger{
-  z-index: 10;
+  position: absolute;
+  bottom: 0%;
+
 }
 
 svg {

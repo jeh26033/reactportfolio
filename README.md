@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+TODO:
+
+1. New Favicon
+2. Add actual links for sidebar. That should probably be pretty high up.
+3. Some sort of re-imagining of the work page.
+4. refine style
+5. Update background colors and highlights (#1b1e21)
+
 ## Available Scripts
 
 In the project directory, you can run:

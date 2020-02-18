@@ -6,9 +6,9 @@ function Sidebar() {
 	    <div style={sideBar} id="gridItem2" className="sidebar">
 	      <span style={sideBarText} className="sideBarText">.find-me</span>
 	      <ul style={sideBarLinks}className="sideBarLinks">
-	        <li style={sideBarLinksLi}>linkedIn </li>
-	        <li style={sideBarLinksLi}>email </li>
-	        <li style={sideBarLinksLi}>github </li>
+	        <li style={sideBarLinksLi}><a href="https://www.linkedin.com/in/joseph-harskamp/">linkedIn</a></li>
+	        <li style={sideBarLinksLi}><a href="mailto:josephharskampdealeron@gmail.com">email </a></li>
+	        <li style={sideBarLinksLi}><a href="https://github.com/jeh26033"> github</a> </li>
 	      </ul>
 	    </div>
 	)

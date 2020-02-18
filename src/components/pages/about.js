@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 export default function About() {
 	return (
 		<React.Fragment>
-		<div className="contactText" style={squareOne}>
-			<div>
-				<div style={largeText} className="">
-					<h4 style={knockout}>phone</h4>
-					<h4 style={knockout}>email</h4>
-					<h4 style={knockout}>twitter</h4>
+			<div className="contactText" style={squareOne}>
+				<div>
+					<div style={largeText} className="">
+						<a target="_blank" href="https://github.com/jeh26033"><h4 style={knockout}>github</h4></a>
+						<a target="_blank" href="mailto:josephharskampdealeron@gmail.com"><h4 style={knockout}>email</h4></a>
+						<a target="_blank" href="https://twitter.com/josephharskamp"><h4 style={knockout}>twitter</h4></a>
 
+					</div>
 				</div>
-			</div>
 			</div>
 
 			<div className="aboutText" style= {textStyle}>
@@ -25,7 +25,7 @@ export default function About() {
 const textStyle = {
 	gridArea:'1 / 13 / span 9 / span 8',
 	color:'#fff',
-	backgroundColor:'rgb(19, 47, 74)',
+	backgroundColor:'#1b1e21',
 	zIndex:'100',
 	padding:'2em',
 	fontSize:'1.5em',
@@ -33,7 +33,6 @@ const textStyle = {
 
 const squareOne = {
 	gridArea:'2/3/ span 4/ span 5',
-
 	zIndex:'1'
 }
 

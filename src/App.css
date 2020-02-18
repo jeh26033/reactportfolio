@@ -150,7 +150,7 @@
 
 .intro {
   grid-area: 1 / 1 / span 8 / span 9;
-  background-color: rgb(19, 47, 74);
+  background-color: #1b1e21;
 }
   .contactText {
     display: none;
@@ -250,5 +250,5 @@ path:nth-child(6) {
 
 
 .intro {
-  background-color: rgb(19, 47, 74);
+  background-color: #1b1e21;
 }

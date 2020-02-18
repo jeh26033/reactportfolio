@@ -6,6 +6,7 @@ TODO:
 2. Add actual links for sidebar. That should probably be pretty high up.
 3. Some sort of re-imagining of the work page.
 4. refine style
+5. Update background colors and highlights (#1b1e21)
 
 ## Available Scripts
 

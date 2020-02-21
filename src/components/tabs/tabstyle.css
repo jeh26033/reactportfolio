@@ -1,146 +1,215 @@
-*{
-	color:#fff;
+
+.cardButton {
+  font-size: 2em;
+ 	text-align: center;
+ 	font-weight: bold;
+}
+
+.card{
+  transition: all 1s ease-out;
+
+  background-color: #1b1e21;
+  border-bottom: 5px solid #d4d4d4!important;
+  border-right: 5px solid #d4d4d4!important;
+  border:5px solid grey;
+}
+
+.box img { 
+  max-width: 100%;
+}
+
+.cardHeading {
+  background-color: rgba(128,0,128,.35);
+  color: #fff;
+}
+
+.box {
+  transition: all 1s;
+  opacity: 0;
+  transform: translateX(100%);
+  background-color:#1b1e21;
+  grid-area: 1/13/span 9/ span 8;
+  z-index:5;
+  color:#fff;
+  padding:3em;
+}
+
+.activeExample {
+  opacity: 100;
+  transform: translateX(0px);
+}
+
+.activeContent {
+  border:5px solid #f0f;
+  z-index: 10!important;
+   border-bottom: 5px solid purple!important;
+  border-right: 5px solid purple!important;
+  overflow: hidden;
+  transform: translateX(40%); 
+}
+
+.activeContent > p {
+  visibility: visible;
 }
 
 .skills {
-	grid-area: 7/2/span 4/span 5;
-	font-size: 1em;
-	padding-left: 10px;
+  position: fixed;
+  top: 60%;
+  left: 7%;
+  font-size: 1em;
+  padding-left: 10px;
 
 }
 
 .skills>ul{
-	list-style-type: none;
-	columns: 2;
+  list-style-type: none;
+  columns: 2;
 }
 
 .skills>ul li {
-	text-shadow: 1px 2px 2px purple;
-	color: #9E9E9E;
-	font-size: 1.5em;
-	margin-left: 10px;
+  text-shadow: 1px 2px 2px purple;
+  color: #9E9E9E;
+  font-size: 1.5em;
+  margin-left: 10px;
 
 }
-.tab-list-item {
-	color: #9E9E9E;
-	position: absolute;
-	transition: all .75s ease-in;
-	width: 300px;
-	height: 300px;
-	cursor: pointer;
-	border: 3px solid black;
-	text-align: center;
-	font-size: 3em;
-	padding-top: 2em;
-	opacity: .80;
-	text-shadow:1px 3px 2px purple;
-	background-color: rgb(19, 47, 74);
-}
+#card1.activeContent {   
 
-.tab-content {
-	color: #fff;
-  	background-color: rgb(19, 47, 74);
-  	grid-area:1/13/span 9/ span 8;
-  	z-index: 5;
-  	padding:3em;
+  background-position-y:center;
+
 
 }
 
-.tab-list-active {
-	left: 30%;
-	top: 30%;
-	z-index: 5;
-	opacity: 100;
-	
-	background-color: rgb(19, 47, 74);
-	visibility: visible!important;
+#card2.activeContent { 
+
+  background-position-y: top;
 }
 
-.tab-list-item:nth-child(2){
-	left: 10%;
-	top: 10%;
-	z-index: 2;
+#card3.activeContent { 
+  background-size: cover;
+
+  background-position-y: 17%;
 }
 
-.tab-list-item:nth-child(3){
-	left: 20%;
-	top: 20%;
+#card4.activeContent { 
+  background-size: cover;
+
+  background-position-y: 17%;
+}
+
+#card1 {
+
+  background-image: url(/discord-logo-image.jpg); 
+  background-position-y:bottom;
+	grid-area: 1/2/ auto/ span 7;
+	z-index:2;
+}
+
+#card2 {
+
+  background-image: url(/pug.jpg); 
+  background-position-y: bottom;
+	grid-area: 2/2/auto/ span 7;
 	z-index: 3;
 }
 
-.tab-list-item:nth-child(4){
-	left:30%;
-	top: 30%;
-	z-index: 3;
+#card3 {
+  grid-area: 3/2/auto/ span 7;
+  z-index: 3;
+  background-image: url(/htmlicon.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#card4 {
+  grid-area: 4/2/auto/ span 7;
+  z-index: 3;
+  background-image: url(/grid-icon.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1800px)  {
+  .skills {
+    position: fixed;
+    top: 54%;
+    left: 15%;
+    font-size: .75em;
+    padding-left: 10px;
+  }
+
+  .box {
+    padding:10px;
+  }
+
+
 }
 
 @media screen and (max-width: 1201px) and (min-width: 768px) {
- 
-  .tab-list-item {
-    width: 250px;
-    height: 250px;
+  .cardButton {
+    font-size: 1.5em!important; 
   }
 
 }
-@media screen and (max-width: 767px) {
-
-	.tab-list-active {
-
-		z-index: 5;
-		opacity: 100;
-		background-color: rgb(19, 47, 74);
-		visibility: visible!important;
-	}
-
-	.tab-list-item:nth-child(2){
-		left: 0%;
-		top: 5%;
-		z-index: 2;
-	}
-
-	.tab-list-item:nth-child(3){
-		left: 0%;
-		top: 22%;
-		z-index: 3;
-	}
-
-	.tab-list-item:nth-child(4){
-		left: 5%;
-		top: 39%;
-		z-index: 3;
-	}
 
 
-	.tab-content {
-		grid-area: 1/5/span 9/span 6;
-		padding:10px;
-	}
+@media screen and (max-width: 767px) and (min-width: 500px) {
+  .cardButton {
+    font-size: 1em;
+  }
 
-	.tab-list-item {
-		width: 125px;
-		height: 125px;
-		font-size: 1.5em;
-	}
+  .box {
+    background-color:#1b1e21;
+    grid-area: 1/7/span 9/ span 8;
+    z-index:5;
+    color:#fff;
+    padding:4px;
+  }
 
-	.skills {
-		grid-area: 7/1/span 4/span 5;
-		font-size: .75em;
-		padding-left: 10px;
-	}
-	.skills h3 {
-		font-size: 1.25em;
-	}
-	.skills>ul{
-		list-style-type: none;
-		columns: 1;
-		padding-left: 0px;
-	}
+  #card1 {
+    grid-area: 1/1/ auto/ span 4;
+  }
 
-	.skills>ul li {
-		text-shadow: 1px 2px 2px purple;
-		color: #fff;
-		font-size: 1.25em;
-		margin-left: 10px;
+  #card2 {
+    grid-area: 2/1/auto/ span 4;
+  }
 
-	}
+  #card3 {
+    grid-area: 3/1/auto/ span 4;
+    z-index: 3;
+  }
+
+  #card4 {
+    grid-area: 4/1/auto/ span 4;
+    z-index: 3;
+  }
+
+}
+
+@media screen and (max-width: 499px)  {
+  .box {
+    grid-area: 1/4/span 9/ span 8;
+    opacity: 85%;
+    padding:4px;
+  }
+
+  .cardButton {
+    font-size: .75em;
+  }
+
+  #card1 {
+    grid-area: 1/1/ auto/ span 2;
+  }
+
+  #card2 {
+    grid-area: 2/1/auto/ span 2;
+  }
+
+  #card3 {
+    grid-area: 3/1/auto/ span 2;
+    
+  }
+
+  #card4 {
+    grid-area: 4/1/auto/ span 2;
+    
+  }
 }

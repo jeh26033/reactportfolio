@@ -24,6 +24,7 @@
 }
 
 .box {
+  overflow: scroll;
   transition: all 1s;
   opacity: 0;
   transform: translateX(100%);
@@ -150,7 +151,35 @@
 
 }
 
+@media screen and (max-width: 767px) {
+  .skills {
+    display: grid;
+    position: relative;
+    top: auto;
+    left: auto;
+    grid-area: 5/1/span 4/span 5;
+    font-size: .75em;
+    padding-left: 10px;
+  }
 
+  .skills h2 {
+    font-size: 1.5em;
+  }
+
+  .skills>ul{
+    list-style-type: none;
+    columns: 1;
+    padding-left: 0px;
+  }
+
+  .skills>ul li {
+    text-shadow: 1px 2px 2px purple;
+    color: #fff;
+    font-size: 1.25em;
+    margin-left: 10px;
+  }
+
+}
 @media screen and (max-width: 767px) and (min-width: 500px) {
   .cardButton {
     font-size: 1em;

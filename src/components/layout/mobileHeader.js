@@ -81,6 +81,8 @@ const gridHeader = {
 	width:'100%',
 	borderTop:'1px solid white',
 	color:'#fff',
+	zIndex:'1000',
+	backgroundColor:'#1b1e21'
 
 }
 

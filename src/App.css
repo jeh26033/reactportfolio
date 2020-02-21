@@ -58,33 +58,7 @@
     overflow: hidden;
   }
 
-  /*====== work cards ========*/
-  .cardButton {
-    transition: all .5s;
-  }
-
-  .box {
-    transition: all .5s;
-    opacity: 0;
-    transform: translateX(100%);
-
-  }
-
-  .activeExample {
-    opacity: 100;
-    transform: translateX(0px);
-  }
-
-  .activeContent {
-    border:3px solid #f0f;
-    z-index: 10!important;
-    overflow: hidden;
-    /*transform:  translateX(20%) */
-  }
-
-  .activeContent > p {
-    visibility: visible;
-  }
+ 
 
 
 

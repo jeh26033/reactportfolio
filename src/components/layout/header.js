@@ -4,7 +4,8 @@ import {
   Switch,
   Route,
   NavLink,
-  useRouteMatch
+  useRouteMatch,
+  Redirect
 } from "react-router-dom";
 import About from '../pages/about.js';
 import Work from '../pages/work.js';
@@ -44,11 +45,11 @@ export default function Header() {
 				</header>
 			</div>
 			
-			<Route exact path="/" render={props => (               
-				<Intro />
-              )} />
-            <Route path="/about" component={About} />
-            <Route path="/work" component={Work} />
+					<Route exact path="/" render={props => (               
+						<Intro />
+		              )} />
+		            <Route path="/about" component={About} />
+		            <Route path="/work" component={Work} />
 
 		</Router>
 	)

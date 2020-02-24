@@ -1,0 +1,26 @@
+.navigation {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.45em;
+	padding: 0px .5em;
+}
+
+.gridHeader {
+	z-index: 5;
+	grid-area: 20 / 1 / span 1 / span 20;
+	border-top: 1px solid white;
+	color: #fff;
+	padding-left: 82px;
+}
+
+.gridUl {
+	display: inline-flex;
+	list-style-type: none;
+	text-align: center;
+	font-size: 2em;
+}
+
+
+
+
+

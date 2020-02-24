@@ -18,7 +18,7 @@ import MobileMenu from './mobileHeaderExpander.js'
 export default function MobileHeader() {
 	return (
 		<Router>
-			<div id="mobileMenu" className="gridHeader gridHeaderMobile" style={gridHeader}>
+			<div id="mobileMenu" className="gridHeaderMobile" style={gridHeader}>
 				<header >
 					<ul style={gridUl}>
 						
@@ -73,8 +73,8 @@ function OldSchoolMenuLink({ label, to, activeOnlyWhenExact }) {
 const linkStyle = {
 	color:'#fff',
 	fontFamily:'sans-serif',
-	fontSize:'1.45em',
-	padding:'0px .5em'
+	fontSize:'1em',
+	padding:'0px .7em'
 }
 
 const gridHeader = {

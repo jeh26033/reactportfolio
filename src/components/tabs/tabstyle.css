@@ -39,7 +39,9 @@
   opacity: 100;
   transform: translateX(0px);
 }
-
+.activeExample::-webkit-scrollbar {
+  display: none;
+}
 .activeContent {
   border:5px solid #f0f;
   z-index: 10!important;
@@ -88,13 +90,11 @@
 
 #card3.activeContent { 
   background-size: cover;
-
   background-position-y: 17%;
 }
 
 #card4.activeContent { 
   background-size: cover;
-
   background-position-y: 17%;
 }
 
@@ -194,20 +194,20 @@
   }
 
   #card1 {
-    grid-area: 1/1/ auto/ span 4;
+    grid-area: 1/1/ auto/ span 2;
   }
 
   #card2 {
-    grid-area: 2/1/auto/ span 4;
+    grid-area: 2/1/auto/ span 2;
   }
 
   #card3 {
-    grid-area: 3/1/auto/ span 4;
+    grid-area: 3/1/auto/ span 2;
     z-index: 3;
   }
 
   #card4 {
-    grid-area: 4/1/auto/ span 4;
+    grid-area: 4/1/auto/ span 2;
     z-index: 3;
   }
 

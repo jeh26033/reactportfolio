@@ -1,0 +1,64 @@
+/*Intro Desktop*/
+.intro {
+	grid-area: 1/2/span 10/span 11;
+	z-index: 5;
+	padding-left: 2em;
+	color: #9E9E9E;
+}
+
+.largeText {
+	text-shadow: 1px 10px 2px purple;
+ 	font-size: 9em;
+ 	font-weight: bold;
+}
+
+.notAsLargeText {
+	text-shadow: 1px 4px 2px purple;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ 	color: #9E9E9E;
+ 	margin-left: 120px;
+
+}
+
+.evenSmallerText {
+ 	font-size: 1em;
+ 	font-weight: bold;
+ 	color: #9E9E9E;
+}
+
+.introRule {
+	color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+	.introMobile {
+		z-index:5;
+		grid-area: 1 / 1 / span 8 / span 9;
+		background-color: #1b1e21;
+		color:#9E9E9E;
+	}
+
+	.largeText {
+		text-shadow:1px 3px 2px purple;
+	 	font-size:3em;
+	 	font-weight:bold;
+	}
+
+	.notAsLargeText {
+		text-shadow:1px 3px 2px purple;
+	 	font-size:1em;
+	 	font-weight:bold;
+	 	color: #9E9E9E;
+	 	margin-left: 20px;
+	}
+
+	.evenSmallerText {
+	 	font-size:1em;
+	 	font-weight:bold;
+	 	color:#9E9E9E
+	}
+
+
+}

@@ -1,60 +1,17 @@
 import React from 'react';
+import './CSS/sidebar.css';
 
 function Sidebar() {
 	return (
-
-	    <div style={sideBar} id="gridItem2" className="sidebar">
-	      <span style={sideBarText} className="sideBarText">.find-me</span>
-	      <ul style={sideBarLinks}className="sideBarLinks">
-	        <li style={sideBarLinksLi}><a href="https://www.linkedin.com/in/joseph-harskamp/">linkedIn</a></li>
-	        <li style={sideBarLinksLi}><a href="mailto:josephharskampdealeron@gmail.com">email </a></li>
-	        <li style={sideBarLinksLi}><a href="https://github.com/jeh26033"> github</a> </li>
+	    <div id="gridItem2" className="sidebar">
+	      <span className="sideBarText">.find-me</span>
+	      <ul className="sideBarLinks">
+	        <li className="sideBarLinksLi"><a href="https://www.linkedin.com/in/joseph-harskamp/">linkedIn</a></li>
+	        <li className="sideBarLinksLi"><a href="mailto:josephharskampdealeron@gmail.com">email </a></li>
+	        <li className="sideBarLinksLi"><a href="https://github.com/jeh26033"> github</a> </li>
 	      </ul>
 	    </div>
 	)
-}
-
-
-const sideBarText = {
-	transform:'rotate(90deg)',
-	color:'#fff',
-	transformOrigin:'20% 40%',
-	fontWeight:'bold',
-	fontSize:'3em',
-	position:'absolute',
-	paddingTop:'.5em',
-	paddingBottom:'20px',
-	width:'4em'
-}
-
-const sideBarLinks = {
-	position:'absolute',
-	listStyleType:'none',
-	display:'inline-flex',
-	transform:'rotate(90deg)',
-	color:'#fff',
-	transformOrigin:'20% 40%',
-	top:'22%',
-	width:'5em',
-	fontWeight:'bold',
-	fontSize:'1.7em',
-	paddingBottom:'20px',
-	paddingTop:'.8em'
-}
-
-
-const sideBarLinksLi = {
-	display: 'inline-flex',
-	padding:'0px .5em',
-	cursor: 'pointer',
-}
-
-const sideBar = {
-	
-	zIndex:'5',
-	gridArea: '1 / 1 / span 10 / span 1',
-	borderRight: '1px solid white',
-	position: 'relative'
 }
 
 

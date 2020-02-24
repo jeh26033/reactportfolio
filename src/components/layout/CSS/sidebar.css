@@ -1,0 +1,42 @@
+/*SideBar*/
+.sideBarText {
+	transform:rotate(90deg);
+	color:#fff;
+	transform-origin:20% 40%;
+	font-weight:bold;
+	font-size:3em;
+	position:absolute;
+	padding-top:.5em;
+	padding-bottom:20px;
+	width:4em;
+}
+
+.sideBarLinks {
+	position: absolute;
+	list-style-type: none;
+	display: inline-flex;
+	transform: rotate(90deg);
+	color: #fff;
+	transform-origin: 20% 40%;
+	top: 22%;
+	width: 5em;
+	font-weight: bold;
+	font-size: 1.7em;
+	padding-bottom: 20px;
+	padding-top: .8em;
+}
+
+
+.sideBarLinksLi {
+	display: inline-flex;
+	padding: 0px .5em;
+	cursor: pointer;
+}
+
+.sidebar {
+	z-index:5;
+	grid-area: 1 / 1 / span 10 / span 1;
+	border-right: 1px solid white;
+	position: relative;
+}
+

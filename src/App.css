@@ -62,12 +62,7 @@
 
 
 
-@media screen and (max-width: 1800px) and (min-width: 992px) {
-  .largeText {
-    font-size: 7em!important;
-  }
 
-}
 
 @media screen and (max-width: 1599px) and (min-width: 1200px) {
   .introGridA {
@@ -122,10 +117,7 @@
     border-right: 10px solid white
   }
 
-.intro {
-  grid-area: 1 / 1 / span 8 / span 9;
-  background-color: #1b1e21;
-}
+
   .contactText {
     display: none;
   }
@@ -148,10 +140,7 @@
  }
 
  
-  .largeText {
-    font-size: 5em!important;
-  
-  }
+
 }
 
 .svgContainer {

@@ -95,14 +95,14 @@ export default class Expander extends Component {
 
 				<div id="card2" className={`hightlighted card ${isBoxVisible2? "activeContent" : ""}`}  onClick={() => this.toggleBox(1)}>
 					<div className="cardButton">	
-						<div className="cardHeading"><span>Pug Breeder Demo Site</span></div>
+						<div className="cardHeading"><span>Mtn-Side Pugs</span></div>
 					</div>
 				</div>
 
 				<div id="card3" className={`hightlighted card ${isBoxVisible3? "activeContent" : ""}`}  onClick={() => this.toggleBox(2)}>
 					<div className="cardButton">
 						
-						<div className="cardHeading"><span>Page Examples</span></div>
+						<div className="cardHeading"><span>DealerOn Pages</span></div>
 						
 					</div>
 				</div>

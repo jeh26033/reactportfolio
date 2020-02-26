@@ -47,23 +47,49 @@
 
 
 @media screen and (max-width: 1201px) and (min-width: 768px) {
+  .sideBarText {
 
+  	font-size: 2.25em;
+
+  }
 }
 
 @media screen and (max-width: 767px) {
-  
+	.sideBarLinks {
+		position: absolute;
+		list-style-type: none;
+		display: inline-flex;
+		transform: rotate(90deg);
+		color: #fff;
+		transform-origin: 20% 40%;
+		top: 10%;
+		width: 5em;
+		font-weight: bold;
+		font-size: 1.7em;
+		padding-bottom: 40px;
+		padding-top: .8em;
+	}
+	  .sideBarLinksLi {
+		display: inline-flex;
+		padding: 0px 1.5em;
+		cursor: pointer;
+	}
 
 }
 
 @media screen and (max-width: 767px) and (min-width: 500px) {
- 
-
+	
+  .sideBarText {
+  	transform-origin: 15% 40%;
+  	font-size: 1.75em;
+  	padding: 0px;
+  }
 }
 
 @media screen and (max-width: 499px)  {
   .sideBarText {
-  	transform-origin: 8% 40%;
-  	font-size: 2em;
+  	transform-origin: 15% 40%;
+  	font-size: 1.75em;
   	padding: 0px;
   }
 }

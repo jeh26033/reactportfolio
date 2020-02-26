@@ -8,7 +8,7 @@
 
 .largeText {
 	text-shadow: 1px 10px 2px purple;
- 	font-size: 9em;
+ 	font-size: 7em;
  	font-weight: bold;
 }
 
@@ -30,12 +30,33 @@
 .introRule {
 	color: white;
 }
+@media screen and (max-width: 1201px) and (min-width: 768px) {
+	.intro .largeText {
+		font-size: 6em;
+	}
+
+	.intro {
+		grid-area: 1/2/span 10/span 13;
+		
+	}
+
+	.intro .notAsLargeText {
+
+	 	margin-left: 50px;
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .intro {
+    grid-area: 1 /2 / span 9 / span 14!important;
+  }
 
 
+
+}
 @media screen and (max-width: 768px) {
 	.introMobile {
 		z-index:5;
-		grid-area: 1 /3 / span 8 / span 9;
+		grid-area: 1 /2 / span 8 / span 9;
 		background-color: #1b1e21;
 		color:#9E9E9E;
 	}

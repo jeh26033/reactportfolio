@@ -86,18 +86,6 @@
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  .aboutText {
-    grid-area: 1 / 3 / span 9 / span 13!important;
-    padding:1em!important;
-  }
-
-  .intro {
-    grid-area: 1 /2 / span 9 / span 14!important;
-  }
-  .introGridB {
-    grid-area: 4/ 5 / span 2 / span 14!important;
-     font-size: 70%;
-  }
 
 
 
@@ -117,19 +105,6 @@
   }
 
  
-
- .sidebar {
-    grid-area: 1 / 1 / span 10 / span 2!important;
-    padding: 1em;
- }
-
- 
-
-}
-
-.svgContainer {
-  margin: auto;
-  cursor: pointer;
 
 }
 /*mobile styles for menu*/

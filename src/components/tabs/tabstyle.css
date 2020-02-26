@@ -148,7 +148,8 @@
   }
   .box {
     grid-area: 1/2/span 7/ span 10;
-    opacity: 85%;
+    
+    
   }
 
   .cardButton {
@@ -184,7 +185,8 @@
   }
   .box {
     grid-area: 1/2/span 7/ span 10;
-    opacity: 85%;
+    
+    
   }
 
   .cardButton {

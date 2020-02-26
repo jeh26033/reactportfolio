@@ -84,7 +84,7 @@ export default class Expander extends Component {
 		return (
 			<React.Fragment >
 				
-				<div id="card1" className={`hightlighted card ${isBoxVisible1? "activeContent" : ""}`} onClick={() => this.toggleBox(0)}>
+				<div id="card1" className={`hightlighted ${isBoxVisible1? "activeContent" : ""}`} onClick={() => this.toggleBox(0)}>
 					<div className="cardButton">
 						<div className="cardHeading">
 							<span>Buddy Bot</span>
@@ -93,20 +93,20 @@ export default class Expander extends Component {
 				</div>
 
 
-				<div id="card2" className={`hightlighted card ${isBoxVisible2? "activeContent" : ""}`}  onClick={() => this.toggleBox(1)}>
+				<div id="card2" className={`hightlighted ${isBoxVisible2? "activeContent" : ""}`}  onClick={() => this.toggleBox(1)}>
 					<div className="cardButton">	
 						<div className="cardHeading"><span>Mtn-Side Pugs</span></div>
 					</div>
 				</div>
 
-				<div id="card3" className={`hightlighted card ${isBoxVisible3? "activeContent" : ""}`}  onClick={() => this.toggleBox(2)}>
+				<div id="card3" className={`hightlighted ${isBoxVisible3? "activeContent" : ""}`}  onClick={() => this.toggleBox(2)}>
 					<div className="cardButton">
 						
 						<div className="cardHeading"><span>DealerOn Pages</span></div>
 						
 					</div>
 				</div>
-				<div id="card4" className={`hightlighted card ${isBoxVisible4? "activeContent" : ""}`}  onClick={() => this.toggleBox(3)}>
+				<div id="card4" className={`hightlighted ${isBoxVisible4? "activeContent" : ""}`}  onClick={() => this.toggleBox(3)}>
 					<div className="cardButton">
 						
 						<div className="cardHeading"><span>Grid Homepage</span></div>
@@ -178,21 +178,7 @@ export default class Expander extends Component {
 						
 					</div>
 			    </div>
-    		<div className="skills">
-    			<h2 className="hightlighted">Knowledge</h2>
-    			<ul>
-	    			<li>HTML</li>
-	    			<li>CSS</li>
-	    			<li>Node</li>
-	    			<li>React</li>
-	    			<li>Bootstrap</li>
-	    			<li>GIT</li>
-	    			<li>Jira</li>
-	    			<li>JQuery</li>
-	    			<li>JavaScript</li>
-	    		</ul>
 
-    		</div>
 
 			</React.Fragment>
 			

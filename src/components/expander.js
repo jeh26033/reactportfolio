@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import PropTypes from 'prop-types';
-import Expand from './expand.js';
-
 
 export default class Expander extends Component {
 

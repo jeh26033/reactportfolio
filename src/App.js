@@ -5,6 +5,8 @@ import Header from './components/layout/header.js';
 import Sidebar from './components/layout/sidebar.js';
 import FloatingJ from './components/layout/floatingj.js';
 import MobileHeader from './components/layout/mobileHeader.js';
+import MobileSideBar from './components/layout/mobileSideBar.js';
+
 import Gyser from './components/gyser.js';
 
 
@@ -40,6 +42,7 @@ export default class App extends Component {
           <div id="gridContainer" className="gridContainer">
              
               <Mobile><MobileHeader /></Mobile>
+              <Mobile><MobileSideBar /></Mobile>
               <Default><Header /></Default>
               <Default><Sidebar/></Default>
               <Default><FloatingJ/></Default>

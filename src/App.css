@@ -99,28 +99,12 @@
      font-size: 70%;
   }
 
-  .largeText {
-    font-size: 8em!important;
-    top: 13%!important;
-    left: 13%!important;
-  }
+
 
 
 }
 
 @media screen and (max-width: 767px) {
-
-  .aboutText {
-    grid-area: 1 / 3 / span 9 / span 8!important;
-    padding:1em!important;
-    font-size: 1em!important;
-    border-right: 10px solid white
-  }
-
-
-  .contactText {
-    display: none;
-  }
 
   .gridContainer {
     grid-gap: .5em;

@@ -40,3 +40,30 @@
 	position: relative;
 }
 
+.mobile .icon {
+	max-width: 30px;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1201px) and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+ 
+
+}
+
+@media screen and (max-width: 499px)  {
+  .sideBarText {
+  	transform-origin: 8% 40%;
+  	font-size: 2em;
+  	padding: 0px;
+  }
+}

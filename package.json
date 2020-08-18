@@ -5,6 +5,8 @@
   "dependencies": {
     "@svgr/webpack": "^4.3.3",
     "animejs": "^3.1.0",
+    "aws-amplify": "^1.1.33",
+    "aws-amplify-react-native": "^2.1.16",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",

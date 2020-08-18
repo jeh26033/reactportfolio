@@ -1,0 +1,21 @@
+{
+    "appName": "reactportfolio",
+    "roleName": "pinpointLambdaRole533eff1d",
+    "cloudformationPolicyName": "cloudformationPolicy533eff1d",
+    "cloudWatchPolicyName": "cloudWatchPolicy533eff1d",
+    "pinpointPolicyName": "pinpointPolicy533eff1d",
+    "authPolicyName": "pinpoint_amplify_533eff1d",
+    "unauthPolicyName": "pinpoint_amplify_533eff1d",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

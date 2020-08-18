@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-reactportfolio-dev-171333-authRole",
+            "UnauthRoleArn": "arn:aws:iam::240203961400:role/amplify-reactportfolio-dev-171333-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::240203961400:role/amplify-reactportfolio-dev-171333-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-reactportfolio-dev-171333-deployment",
+            "UnauthRoleName": "amplify-reactportfolio-dev-171333-unauthRole",
+            "StackName": "amplify-reactportfolio-dev-171333",
+            "StackId": "arn:aws:cloudformation:us-east-1:240203961400:stack/amplify-reactportfolio-dev-171333/ac9a0df0-e197-11ea-8615-12605691f9eb",
+            "AmplifyAppId": "d2wqg4b36m462q"
+        },
+        "categories": {
+            "auth": {
+                "cognito5f86ebdd": {}
+            }
+        }
+    }
+}

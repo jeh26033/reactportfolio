@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognito5f86ebdd": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"reactportfolio": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

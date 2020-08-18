@@ -13,6 +13,9 @@ import Gyser from './components/gyser.js';
 import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })

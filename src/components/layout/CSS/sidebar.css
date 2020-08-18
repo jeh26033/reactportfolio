@@ -48,9 +48,7 @@
 
 @media screen and (max-width: 1201px) and (min-width: 768px) {
   .sideBarText {
-
   	font-size: 2.25em;
-
   }
 }
 
@@ -68,6 +66,7 @@
 		font-size: 1.7em;
 		padding-bottom: 40px;
 		padding-top: .8em;
+		padding-right: 50px;
 	}
 	  .sideBarLinksLi {
 		display: inline-flex;

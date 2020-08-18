@@ -1,6 +1,6 @@
 /* Config */
-$color-particle: #800080;
-$spacing: 2560px;
+$color-particle: #fff;
+$spacing: 2000px;
 $time-1: 60s;
 $time-2: 80s;
 $time-3: 100s;
@@ -12,7 +12,7 @@ $time-4: 400s;
    $val: 0px 0px $color-particle;
    @for $i from 1 through $max {
       $val: #{$val},
-      random($spacing)+px random($spacing)+px $color-particle;
+      random($spacing)+px random($spacing)+px ;
    }
    @return $val;
 }
@@ -27,73 +27,57 @@ $time-4: 400s;
   position: absolute;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
-  &.smaller {
-    width: 5px;
-    height: 5px;
-  }
-  &.small {
-    width: 10px;
-    height: 10px;
-  }
-  &.normal {
-    width: 15px;
-    height: 15px;
-  }
-  &.big {
-    width: 20px;
-    height: 20px;
-  }
-  &.bigger {
-    width: 25px;
-    height: 25px;
-  }
 }
+
 .particle,
 .particle:after {
-  background: green;
+ 
+  top: $spacing;
 }
 
 .particle:after {
-  position: absolute;
+  position:absolute;
   content: "";
   top: $spacing;
 
 }
 
 .particle-1 {
-  animation: animParticle $time-1 linear infinite alternate;
-  @include particles(600);
-  height:1px;
-  width:1px;
+  animation: animParticleLoad $time-1 linear infinite alternate;
+  @include particles(300);
+  height:3px;
+  width:3px;
+  color: #fff;
 }
 
 .particle-1:after {
-  @include particles(600);
+  @include particles(300);
   height:1px;
   width:1px;
 }
 
 .particle-2 {
-  animation: reverseAnimParticle $time-2 linear infinite;
+  animation: reverseAnimParticle $time-2 linear infinite alternate;
   @include particles(200);
   height: 2px;
   width: 2px;
+  color: #fff;
 }
 
 .particle-2:after {
-  @include particles(200);
+  @include particles(100);
   height: 2px;
   width: 2px;
   border-radius: 100%;
 }
 
 .particle-3 {
-  animation: reverseAnimParticle $time-3 linear infinite;
+  animation: reverseAnimParticle $time-3 linear infinite alternate;
   @include particles(100);
   height: 10px;
   width: 10px;
   border-radius: 100%;
+  color: #fff;
 
 }
 
@@ -101,30 +85,25 @@ $time-4: 400s;
   @include particles(100);
   height: 10px;
   width: 10px;
-   border-radius: 100%;
-
-
-
+  border-radius: 100%;
 }
 
 .particle-4 {
-  animation: animParticle $time-4 linear infinite;
+  animation: animParticle $time-4 linear infinite alternate;
   @include particles(400);
   height: 6px;
   width: 6px;
   border-radius: 100%;
- 
 }
 
 .particle-4:after {
   @include particles(400);
   height:4px;
   width:4px;
-
 }
 
 .particle-5 {
-  animation: reverseAnimParticle $time-1 linear infinite;
+  animation: reverseAnimParticle $time-1 linear infinite alternate;
   animation-delay: 20s;
   @include particles(600);
   height:1px;
@@ -139,12 +118,18 @@ $time-4: 400s;
   width:4px;
 
 }
+
+@keyframes animParticleLoad {
+  from { transform: translateX(-2000px); }
+  to   { transform: translateX($spacing * -2); }
+}
+
 @keyframes animParticle {
-  from { transform: translateX(0px); }
-  to   { transform: translateX($spacing * -1); }
+  from { transform: translateX(-2000px); }
+  to   { transform: translateX($spacing * -2); }
 }
 @keyframes reverseAnimParticle {
-  from { transform: translateX(0px); }
+  from { transform: translateX(-2000px); }
   to   { transform: translateX($spacing * -.5); }
 }
 

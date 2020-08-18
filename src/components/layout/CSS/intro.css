@@ -1,15 +1,36 @@
 /*Intro Desktop*/
+
 .intro {
-	grid-area: 1/2/span 10/span 11;
-	z-index: 5;
+	grid-area: 1/2/span 10/span 17;
+	width: 100%;
+	
+}
+.introBG {
+	position: relative;
+	width: 100%;
+	bottom: 65%;
+	height: 110%;
+	padding-right: 120%;
 	padding-left: 2em;
 	color: #9E9E9E;
+	z-index: 1;
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transform: skewY(-25deg);
+}
+
+.introContent {
+	position: absolute;
+	top: 10%;
+	z-index: 10;
 }
 
 .largeText {
 	text-shadow: 1px 10px 2px purple;
  	font-size: 7em;
  	font-weight: bold;
+
 }
 
 .notAsLargeText {
@@ -30,41 +51,54 @@
 .introRule {
 	color: white;
 }
+
 @media screen and (max-width: 1201px) and (min-width: 768px) {
 	.intro .largeText {
 		font-size: 6em;
 	}
 
-	.intro {
-		grid-area: 1/2/span 10/span 13;
-		
-	}
-
 	.intro .notAsLargeText {
-
 	 	margin-left: 50px;
 	}
+	.introBG {
+
+		height: 130%;
+		
+	}
 }
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .intro {
-    grid-area: 1 /2 / span 9 / span 14!important;
+    grid-area: 1 /2 / span 9 / span 17!important;
   }
 
+  .introContent {
+	position: absolute;
+	top: 1%;
+	z-index: 10;
 
 
 }
+}
+
 @media screen and (max-width: 768px) {
 	.introMobile {
 		z-index:5;
-		grid-area: 1 /2 / span 8 / span 9;
-		background-color: #1b1e21;
-		color:#9E9E9E;
+		grid-area: 1 /2 / span 4 / span 8;
+		height: 120%;
+		width: 100%;
+		color: #9E9E9E;
+		background: #000000;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 	}
 
 	.largeText {
 		text-shadow:1px 3px 2px purple;
 	 	font-size:3em;
 	 	font-weight:bold;
+	 	
 	}
 
 	.notAsLargeText {
@@ -78,8 +112,8 @@
 	.evenSmallerText {
 	 	font-size:1em;
 	 	font-weight:bold;
-	 	color:#9E9E9E
-	}
+	 	color:#9E9E9E;
 
+	}
 
 }

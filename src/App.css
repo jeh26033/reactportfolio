@@ -17,11 +17,9 @@
   body {
     margin:0px;
     padding:0px;
-/*    background-color: #123;*/
-background: #614385;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #614385;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -61,14 +59,14 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
     overflow: hidden;
   }
 
-@media screen and (max-width: 1599px) and (min-width: 1200px) {
+/*@media screen and (max-width: 1599px) and (min-width: 1200px) {
   .introGridA {
     grid-area: 2 / 3 / span 4 / span 11!important;
     font-size: 80%;
   }
-}
+}*/
 
-@media screen and (max-width: 1199px) and (min-width: 992px) {
+/*@media screen and (max-width: 1199px) and (min-width: 992px) {
   .introGridA {
     grid-area: 2 / 3 / span 3 / span 12!important;
     font-size: 70%;
@@ -79,16 +77,12 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
     font-size:90%;
   }
 }
-
+*/
 @media screen and (max-width: 991px) and (min-width: 768px) {
-
-
-
 
 }
 
 @media screen and (max-width: 767px) {
-
   .gridContainer {
     grid-gap: .5em;
     grid-template-rows: repeat(10, 1fr );
@@ -98,13 +92,10 @@ background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, F
     background-position: center;
     grid-template-columns: repeat(10, 1fr );
   }
-
- 
-
 }
+
+
 /*mobile styles for menu*/
-
-
 
 #mobileMenu {  
  
@@ -165,7 +156,3 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
-
-.intro {
-  background-color: #1b1e21;
-}

@@ -4,7 +4,6 @@
     text-align: left; 
   } 
 
-  canvas {display: block; position: fixed;}
  .hightlighted {
     color: #9E9E9E;
     text-shadow:1px 2px 2px purple;
@@ -18,7 +17,11 @@
   body {
     margin:0px;
     padding:0px;
-    background-color: #123;
+/*    background-color: #123;*/
+background: #614385;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -58,19 +61,11 @@
     overflow: hidden;
   }
 
- 
-
-
-
-
-
 @media screen and (max-width: 1599px) and (min-width: 1200px) {
   .introGridA {
     grid-area: 2 / 3 / span 4 / span 11!important;
     font-size: 80%;
   }
-
-
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {

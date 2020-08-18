@@ -24,6 +24,7 @@
 	position: absolute;
 	top: 10%;
 	z-index: 10;
+	padding-left: 1em;
 }
 
 .largeText {
@@ -116,4 +117,6 @@
 
 	}
 
+
 }
+

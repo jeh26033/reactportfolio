@@ -68,6 +68,10 @@
 		padding-top: .8em;
 		padding-right: 50px;
 	}
+
+	.sidebar {
+		width: 45px;
+	}
 	  .sideBarLinksLi {
 		display: inline-flex;
 		padding: 0px 1.5em;

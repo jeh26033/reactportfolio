@@ -83,7 +83,8 @@ export default class Expander extends Component {
 		const { isBoxVisible4 } = this.state;
 		return (
 			<React.Fragment >
-				
+			
+
 				<div id="card1" className={`hightlighted ${isBoxVisible1? "activeContent" : ""}`} onClick={() => this.toggleBox(0)}>
 					<div className="cardButton">
 						<div className="cardHeading">
@@ -190,22 +191,3 @@ export default class Expander extends Component {
 
 
 
-
-const card1Content = {
-	
-	gridArea:'2/4/span 2/ span 2',
-}
-
-const card2Content = {
-	display:'none',
-	gridArea:'3/5/span 2/ span 2',
-}
-
-const card3Content = {
-	display:'none',
-	gridArea:'4/6/span 2/ span 2',
-}
-
-const card4Content = {
-	gridArea:'5/7/span 2/ span 2',
-}

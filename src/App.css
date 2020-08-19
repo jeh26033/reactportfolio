@@ -4,11 +4,6 @@
     text-align: left; 
   } 
 
- .hightlighted {
-    color: #fff;
-    text-shadow:1px 2px 2px purple;
-  }
-
   #mycanvas { 
     position: fixed;
     z-index: 0;
@@ -28,12 +23,15 @@
 
   a {
     color: #fff;
-    text-decoration: underline;
+    font-weight: bolder;
+   
   }
 
   a:hover {
     text-decoration: none;
-    color:#ccc;
+    color:#222;
+    text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    cursor: pointer;
   }
 
   .container-fluid {

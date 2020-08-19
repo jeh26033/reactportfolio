@@ -16,6 +16,7 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.10.2",
     "react-fontawesome": "^1.6.1",
+    "react-gtm-module": "^2.0.10",
     "react-pts-canvas": "^0.2.4",
     "react-responsive": "^8.0.1",
     "react-router-dom": "^5.1.2",

@@ -13,6 +13,14 @@ import Gyser from './components/gyser.js';
 import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'GTM-W87MG5C'
+}
+
+TagManager.initialize(tagManagerArgs);
+
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })
   return isDesktop ? children : null

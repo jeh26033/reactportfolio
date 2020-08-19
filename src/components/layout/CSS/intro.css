@@ -28,14 +28,13 @@
 }
 
 .largeText {
-	text-shadow: 1px 10px 2px purple;
+	text-shadow: unset;
  	font-size: 7em;
  	font-weight: bold;
-
 }
 
 .notAsLargeText {
-	text-shadow: 1px 4px 2px purple;
+	
  	font-size: 2em;
  	font-weight: bold;
  	color: #9E9E9E;
@@ -96,14 +95,14 @@
 	}
 
 	.largeText {
-		text-shadow:1px 3px 2px purple;
+		
 	 	font-size:3em;
 	 	font-weight:bold;
 	 	
 	}
 
 	.notAsLargeText {
-		text-shadow:1px 3px 2px purple;
+		
 	 	font-size:1em;
 	 	font-weight:bold;
 	 	color: #9E9E9E;

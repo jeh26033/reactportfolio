@@ -23,6 +23,7 @@
   transition: all .4s ease-out;
   color: #fff;
   padding-left: 1em;
+  cursor: pointer;
 }
 
 .box {

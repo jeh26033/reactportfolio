@@ -14,12 +14,16 @@ import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import TagManager from 'react-gtm-module'
- 
+import ReactGA from 'react-ga';
+
+
 const tagManagerArgs = {
     gtmId: 'GTM-W87MG5C'
 }
-
 TagManager.initialize(tagManagerArgs);
+ReactGA.initialize('UA-175792818-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })

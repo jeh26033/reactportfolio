@@ -7,7 +7,7 @@
 
 .gridHeader {
 	z-index: 5;
-	grid-area: 20 / 1 / span 1 / span 20;
+	grid-area: 20 / 1 / span 1 / span 30;
 	border-top: 1px solid white;
 	color: #fff;
 	padding-left: 82px;

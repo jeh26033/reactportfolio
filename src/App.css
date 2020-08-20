@@ -53,7 +53,7 @@
     display: grid;
     grid-auto-flow: dense;
     background-position: center;
-    grid-template-columns: repeat(20, 1fr [start]);
+    grid-template-columns: repeat(30, 1fr [start]);
     height: 100vh;
     overflow: hidden;
   }

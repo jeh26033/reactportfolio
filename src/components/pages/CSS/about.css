@@ -1,5 +1,5 @@
 .aboutText  {
-	grid-area:1 /9 / span 10 / span 12;
+	grid-area:1 /19 / span 10 / span 12;
 	color:#fff;
 	background-color:#1b1e21;
 	z-index:100;
@@ -26,7 +26,7 @@
 }
 
 .skills {
-	grid-area: 2/3/ span 4/ span 5;
+	grid-area: 2/5/ span 4/ span 5;
 	font-size: 1em;
 	padding-left: 10px;
 	z-index: 40;

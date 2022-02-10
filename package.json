@@ -9,7 +9,7 @@
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "particle.js": "^1.0.7",
     "pts": "^0.8.10",
     "react": "^16.10.2",
